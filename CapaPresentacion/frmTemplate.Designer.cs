@@ -47,6 +47,7 @@
             // 
             // pnlModal
             // 
+            this.pnlModal.Location = new System.Drawing.Point(360, 12);
             this.pnlModal.Size = new System.Drawing.Size(430, 474);
             // 
             // btnCloseModal

@@ -45,7 +45,7 @@ namespace CapaDatos
             con.Close();
         }
 
-        public DataSet GetMarca(int codigo)
+        public DataSet D_GetMarca(int codigo)
         {
 
             SqlCommand cmd = new SqlCommand("SELECT * FROM tbl_mar_marca WHERE mar_codigo = @codigo", con);

@@ -40,7 +40,7 @@
             // 
             // gbxSearch_template
             // 
-            this.gbxSearch_template.Controls.Add(this.pnlModal);
+            this.gbxSearch_template.Location = new System.Drawing.Point(9, 42);
             this.gbxSearch_template.Margin = new System.Windows.Forms.Padding(2);
             this.gbxSearch_template.Padding = new System.Windows.Forms.Padding(2);
             this.gbxSearch_template.Size = new System.Drawing.Size(606, 73);
@@ -48,7 +48,7 @@
             // txtSearch_template
             // 
             this.txtSearch_template.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSearch_template.Size = new System.Drawing.Size(574, 28);
+            this.txtSearch_template.Size = new System.Drawing.Size(432, 28);
             this.txtSearch_template.TextChanged += new System.EventHandler(this.TxtSearch_template_TextChanged);
             // 
             // lblTitle_template
@@ -58,7 +58,7 @@
             // 
             // pnlGrid_template
             // 
-            this.pnlGrid_template.Controls.Add(this.txtSearch_template);
+            //this.pnlGrid_template.Controls.Add(this.txtSearch_template);
             // 
             // btnNuevo_template
             // 
@@ -67,7 +67,7 @@
             // pnlModal
             // 
             this.pnlModal.Controls.Add(this.txtNombre);
-            this.pnlModal.Location = new System.Drawing.Point(194, 58);
+            this.pnlModal.Location = new System.Drawing.Point(222, 29);
             this.pnlModal.Size = new System.Drawing.Size(479, 435);
             this.pnlModal.Controls.SetChildIndex(this.btnCloseModal, 0);
             this.pnlModal.Controls.SetChildIndex(this.txtNombre, 0);
@@ -76,17 +76,17 @@
             // 
             // btnCloseModal
             // 
-            this.btnCloseModal.Location = new System.Drawing.Point(436, -1);
+            this.btnCloseModal.Location = new System.Drawing.Point(294, -1);
             this.btnCloseModal.Click += new System.EventHandler(this.BtnCloseModal_Click);
             // 
             // btnAccionModal
             // 
-            this.btnAccionModal.Location = new System.Drawing.Point(184, 392);
+            this.btnAccionModal.Location = new System.Drawing.Point(113, 339);
             this.btnAccionModal.Click += new System.EventHandler(this.BtnAccionModal_Click);
             // 
             // lblTituloModal
             // 
-            this.lblTituloModal.Location = new System.Drawing.Point(208, 7);
+            this.lblTituloModal.Location = new System.Drawing.Point(137, 7);
             // 
             // txtNombre
             // 
@@ -126,6 +126,7 @@
             this.Controls.SetChildIndex(this.gbxSearch_template, 0);
             this.Controls.SetChildIndex(this.lblTitle_template, 0);
             this.Controls.SetChildIndex(this.pnlGrid_template, 0);
+            this.Controls.SetChildIndex(this.pnlModal, 0);
             this.Controls.SetChildIndex(this.btnNuevo_template, 0);
             this.gbxSearch_template.ResumeLayout(false);
             this.gbxSearch_template.PerformLayout();

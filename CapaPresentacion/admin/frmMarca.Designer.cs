@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.epMarca = new System.Windows.Forms.ErrorProvider(this.components);
+            this.prueba_editar = new System.Windows.Forms.Button();
             this.gbxSearch_template.SuspendLayout();
             this.pnlModal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epMarca)).BeginInit();
@@ -43,6 +44,7 @@
             // txtSearch_template
             // 
             this.txtSearch_template.Size = new System.Drawing.Size(764, 34);
+            this.txtSearch_template.TextChanged += new System.EventHandler(this.TxtSearch_template_TextChanged);
             // 
             // lblTitle_template
             // 
@@ -87,15 +89,32 @@
             // 
             this.epMarca.ContainerControl = this;
             // 
+            // prueba_editar
+            // 
+            this.prueba_editar.Location = new System.Drawing.Point(980, 36);
+            this.prueba_editar.Name = "prueba_editar";
+            this.prueba_editar.Size = new System.Drawing.Size(75, 23);
+            this.prueba_editar.TabIndex = 87;
+            this.prueba_editar.Text = "prueba_editar";
+            this.prueba_editar.UseVisualStyleBackColor = true;
+            this.prueba_editar.Click += new System.EventHandler(this.Prueba_editar_Click);
+            // 
             // frmMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1183, 688);
+            this.Controls.Add(this.prueba_editar);
             this.Name = "frmMarca";
             this.Text = "frmMarca";
             this.Load += new System.EventHandler(this.FrmMarca_Load);
+            this.Controls.SetChildIndex(this.gbxSearch_template, 0);
+            this.Controls.SetChildIndex(this.lblTitle_template, 0);
+            this.Controls.SetChildIndex(this.pnlGrid_template, 0);
+            this.Controls.SetChildIndex(this.pnlModal, 0);
+            this.Controls.SetChildIndex(this.btnNuevo_template, 0);
+            this.Controls.SetChildIndex(this.prueba_editar, 0);
             this.gbxSearch_template.ResumeLayout(false);
             this.gbxSearch_template.PerformLayout();
             this.pnlModal.ResumeLayout(false);
@@ -109,5 +128,6 @@
         #endregion
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.ErrorProvider epMarca;
+        private System.Windows.Forms.Button prueba_editar;
     }
 }

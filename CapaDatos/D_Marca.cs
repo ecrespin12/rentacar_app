@@ -45,6 +45,35 @@ namespace CapaDatos
             con.Close();
         }
 
+        public DataSet GetMarca(int codigo)
+        {
+
+            SqlCommand cmd = new SqlCommand("SELECT * FROM tbl_mar_marca WHERE mar_codigo = @codigo", con);
+            cmd.CommandType = CommandType.Text;
+            cmd.Parameters.AddWithValue("@codigo", codigo);
+
+
+            DataSet ds = null;
+            try
+            {
+                ds = new DataSet();
+
+                cmd.CommandTimeout = 600;
+
+                cmd.CommandType = CommandType.Text;
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(ds);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            con.Close();
+            return ds;
+        }
+
 
     }
 }

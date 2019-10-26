@@ -147,7 +147,6 @@
             this.dgv_template.Location = new System.Drawing.Point(15, 17);
             this.dgv_template.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_template.Name = "dgv_template";
-            this.dgv_template.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -167,7 +166,6 @@
             this.editar.Image = global::CapaPresentacion.Properties.Resources.writing;
             this.editar.MinimumWidth = 6;
             this.editar.Name = "editar";
-            this.editar.ReadOnly = true;
             this.editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.editar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.editar.Width = 74;
@@ -178,7 +176,6 @@
             this.eliminar.Image = global::CapaPresentacion.Properties.Resources.writing;
             this.eliminar.MinimumWidth = 6;
             this.eliminar.Name = "eliminar";
-            this.eliminar.ReadOnly = true;
             this.eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.eliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.eliminar.Width = 87;

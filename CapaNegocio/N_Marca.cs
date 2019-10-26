@@ -22,5 +22,10 @@ namespace CapaNegocio
 
             dMarca.D_InsertMarca(mar);
         }
+
+        public DataSet GetMarca(int codigo)
+        {
+            return dMarca.GetMarca(codigo);
+        }
     }
 }

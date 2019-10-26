@@ -20,9 +20,10 @@ namespace CapaPresentacion.admin
             InitializeComponent();
         }
 
+        DataTable dt;
         E_Marca entMarca = new E_Marca();
         N_Marca negMarca = new N_Marca();
-
+ 
         //metodos
 
         void InsertMarca() {
@@ -53,15 +54,19 @@ namespace CapaPresentacion.admin
         {
             //dgvListMarcas.AutoGenerateColumns = false;
     
-            DataTable dt = negMarca.N_ListMarcas();
+            dt = negMarca.N_ListMarcas();
             dgv_template.DataSource = dt;
 
          
 
             dgv_template.Columns[0].HeaderText = "Editar";
             dgv_template.Columns[1].HeaderText = "Eliminar";
+
             dgv_template.Columns[2].HeaderText = "Codigo";
+            dgv_template.Columns[2].Name = "codigo";
+
             dgv_template.Columns[3].HeaderText = "Nombres";
+            dgv_template.Columns[3].Name = "nombres";
 
             dgv_template.Columns[2].DisplayIndex = 0;
             dgv_template.Columns[3].DisplayIndex = 1;
@@ -71,6 +76,50 @@ namespace CapaPresentacion.admin
             dgv_template.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
+
+        //aca busquen la manera que al buscar en la misma caja se pueda buscar por codigo, nombres, etc... similar alos datatables de js
+         void Buscar()
+        {
+            try
+            {
+                string nombres = "mar_nombre";
+    
+                string busqueda = txtSearch_template.Text.Trim();
+                DataView dv = new DataView(dt.Copy());
+
+                dv.RowFilter = nombres + " Like '%" + busqueda + "%'";
+                dgv_template.DataSource = dv;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: No se encontro la informacion" + ex);
+            }
+        }
+
+        void GetMarca(int codigo) {
+
+            DataSet ds = negMarca.GetMarca(1);
+            DataTable dtMarca = ds.Tables[0];
+            if (dtMarca.Rows.Count > 0)
+            {
+                string codigoMarca = dtMarca.Rows[0]["mar_codigo"].ToString();
+                string nombreMarca = dtMarca.Rows[0]["mar_nombre"].ToString();
+
+                MessageBox.Show(codigoMarca);
+
+                MessageBox.Show(nombreMarca);
+
+            }
+            else {
+
+                //sin datos
+            }
+
+        }
+
+
+
         private void FrmMarca_Load(object sender, EventArgs e)
         {
             pnlModal.Visible = false;
@@ -78,10 +127,7 @@ namespace CapaPresentacion.admin
             ListMarcas();
         }
 
-        private void BtnGuardar_Click(object sender, EventArgs e)
-        {
-        
-        }
+
 
         private void BtnAccionModal_Click(object sender, EventArgs e)
         {
@@ -97,6 +143,16 @@ namespace CapaPresentacion.admin
         {
             pnlModal.Visible = false;
             ListMarcas();
+        }
+
+        private void TxtSearch_template_TextChanged(object sender, EventArgs e)
+        {
+            Buscar();
+        }
+
+        private void Prueba_editar_Click(object sender, EventArgs e)
+        {
+            GetMarca(1);
         }
     }
 }

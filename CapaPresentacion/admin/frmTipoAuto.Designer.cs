@@ -44,37 +44,36 @@
             // 
             // btnNuevo_template
             // 
-            this.btnNuevo_template.Location = new System.Drawing.Point(21, 123);
+            this.btnNuevo_template.Location = new System.Drawing.Point(750, 77);
             this.btnNuevo_template.Click += new System.EventHandler(this.BtnNuevo_template_Click);
             // 
             // pnlModal
             // 
-            this.pnlModal.Controls.Add(this.btnNuevo_template);
             this.pnlModal.Controls.Add(this.txtCodigo);
             this.pnlModal.Controls.Add(this.lblNombre);
             this.pnlModal.Controls.Add(this.txtNombreTipoAuto);
-            this.pnlModal.Size = new System.Drawing.Size(400, 400);
+            this.pnlModal.Location = new System.Drawing.Point(222, 29);
+            this.pnlModal.Size = new System.Drawing.Size(479, 435);
             this.pnlModal.Controls.SetChildIndex(this.txtNombreTipoAuto, 0);
             this.pnlModal.Controls.SetChildIndex(this.lblNombre, 0);
             this.pnlModal.Controls.SetChildIndex(this.txtCodigo, 0);
             this.pnlModal.Controls.SetChildIndex(this.btnCloseModal, 0);
             this.pnlModal.Controls.SetChildIndex(this.btnAccionModal, 0);
             this.pnlModal.Controls.SetChildIndex(this.lblTituloModal, 0);
-            this.pnlModal.Controls.SetChildIndex(this.btnNuevo_template, 0);
             // 
             // btnCloseModal
             // 
-            this.btnCloseModal.Location = new System.Drawing.Point(957, -1);
+            this.btnCloseModal.Location = new System.Drawing.Point(433, 2);
             this.btnCloseModal.Click += new System.EventHandler(this.BtnCloseModal_Click);
             // 
             // btnAccionModal
             // 
-            this.btnAccionModal.Location = new System.Drawing.Point(435, 910);
+            this.btnAccionModal.Location = new System.Drawing.Point(35, 180);
             this.btnAccionModal.Click += new System.EventHandler(this.BtnAccionModal_Click);
             // 
             // lblTituloModal
             // 
-            this.lblTituloModal.Location = new System.Drawing.Point(45, 23);
+            this.lblTituloModal.Location = new System.Drawing.Point(137, 7);
             // 
             // txtNombreTipoAuto
             // 
@@ -99,7 +98,7 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(21, 98);
+            this.txtCodigo.Location = new System.Drawing.Point(362, 397);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
             this.txtCodigo.TabIndex = 5;

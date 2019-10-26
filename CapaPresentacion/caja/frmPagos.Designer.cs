@@ -70,6 +70,7 @@
             // 
             this.dgv_template.AllowUserToAddRows = false;
             this.dgv_template.AllowUserToDeleteRows = false;
+            this.dgv_template.AllowUserToOrderColumns = true;
             this.dgv_template.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));

@@ -28,9 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.txtNombreTipoAuto = new System.Windows.Forms.TextBox();
+            this.epErrorNombre = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.gbxSearch_template.SuspendLayout();
             this.pnlModal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epErrorNombre)).BeginInit();
             this.SuspendLayout();
+            // 
+            // txtSearch_template
+            // 
+            this.txtSearch_template.TextChanged += new System.EventHandler(this.TxtSearch_template_TextChanged);
+            // 
+            // btnNuevo_template
+            // 
+            this.btnNuevo_template.Location = new System.Drawing.Point(21, 123);
+            this.btnNuevo_template.Click += new System.EventHandler(this.BtnNuevo_template_Click);
+            // 
+            // pnlModal
+            // 
+            this.pnlModal.Controls.Add(this.btnNuevo_template);
+            this.pnlModal.Controls.Add(this.txtCodigo);
+            this.pnlModal.Controls.Add(this.lblNombre);
+            this.pnlModal.Controls.Add(this.txtNombreTipoAuto);
+            this.pnlModal.Size = new System.Drawing.Size(400, 400);
+            this.pnlModal.Controls.SetChildIndex(this.txtNombreTipoAuto, 0);
+            this.pnlModal.Controls.SetChildIndex(this.lblNombre, 0);
+            this.pnlModal.Controls.SetChildIndex(this.txtCodigo, 0);
+            this.pnlModal.Controls.SetChildIndex(this.btnCloseModal, 0);
+            this.pnlModal.Controls.SetChildIndex(this.btnAccionModal, 0);
+            this.pnlModal.Controls.SetChildIndex(this.lblTituloModal, 0);
+            this.pnlModal.Controls.SetChildIndex(this.btnNuevo_template, 0);
+            // 
+            // btnCloseModal
+            // 
+            this.btnCloseModal.Location = new System.Drawing.Point(957, -1);
+            this.btnCloseModal.Click += new System.EventHandler(this.BtnCloseModal_Click);
+            // 
+            // btnAccionModal
+            // 
+            this.btnAccionModal.Location = new System.Drawing.Point(435, 910);
+            this.btnAccionModal.Click += new System.EventHandler(this.BtnAccionModal_Click);
+            // 
+            // lblTituloModal
+            // 
+            this.lblTituloModal.Location = new System.Drawing.Point(45, 23);
+            // 
+            // txtNombreTipoAuto
+            // 
+            this.txtNombreTipoAuto.AccessibleName = "txtNombreTipoAuto";
+            this.txtNombreTipoAuto.Location = new System.Drawing.Point(21, 72);
+            this.txtNombreTipoAuto.Name = "txtNombreTipoAuto";
+            this.txtNombreTipoAuto.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreTipoAuto.TabIndex = 3;
+            // 
+            // epErrorNombre
+            // 
+            this.epErrorNombre.ContainerControl = this;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(18, 48);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(123, 13);
+            this.lblNombre.TabIndex = 4;
+            this.lblNombre.Text = "Nombre de Tipo de Auto";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(21, 98);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.TabIndex = 5;
+            this.txtCodigo.Visible = false;
             // 
             // frmTipoAuto
             // 
@@ -45,11 +118,17 @@
             this.gbxSearch_template.PerformLayout();
             this.pnlModal.ResumeLayout(false);
             this.pnlModal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epErrorNombre)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txtNombreTipoAuto;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.ErrorProvider epErrorNombre;
+        private System.Windows.Forms.TextBox txtCodigo;
     }
 }

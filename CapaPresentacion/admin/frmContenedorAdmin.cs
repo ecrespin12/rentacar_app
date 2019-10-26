@@ -148,7 +148,12 @@ namespace CapaPresentacion
 
         private void TiposDeAutoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            pnlContenedor.Controls.Clear();
 
+            frmTipoAuto frm = new frmTipoAuto();
+            frm.MdiParent = this;
+            this.pnlContenedor.Controls.Add(frm);
+            frm.Show();
         }
     }
 }

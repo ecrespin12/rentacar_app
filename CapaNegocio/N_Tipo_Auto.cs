@@ -18,5 +18,22 @@ namespace CapaNegocio
         {
             return dTipoAuto.D_ListTipoAuto();
         }
+
+        public void InsertTipoAuto(E_Tipo_Auto instancia)
+        {
+
+            dTipoAuto.D_InsertTipoAuto(instancia);
+        }
+
+        public void ActualizarTipoAuto(E_Tipo_Auto instancia)
+        {
+
+            dTipoAuto.D_ActualizarTipoAuto(instancia);
+        }
+
+        public DataSet GetTipoAuto(int codigo)
+        {
+            return dTipoAuto.D_GetTipoAuto(codigo);
+        }
     }
 }

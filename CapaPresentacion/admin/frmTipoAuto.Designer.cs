@@ -42,6 +42,12 @@
             // 
             this.txtSearch_template.TextChanged += new System.EventHandler(this.TxtSearch_template_TextChanged);
             // 
+            // lblTitle_template
+            // 
+            this.lblTitle_template.Location = new System.Drawing.Point(471, 7);
+            this.lblTitle_template.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitle_template.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // btnNuevo_template
             // 
             this.btnNuevo_template.Location = new System.Drawing.Point(750, 77);
@@ -52,7 +58,7 @@
             this.pnlModal.Controls.Add(this.txtCodigo);
             this.pnlModal.Controls.Add(this.lblNombre);
             this.pnlModal.Controls.Add(this.txtNombreTipoAuto);
-            this.pnlModal.Location = new System.Drawing.Point(222, 29);
+            this.pnlModal.Location = new System.Drawing.Point(194, 58);
             this.pnlModal.Size = new System.Drawing.Size(479, 435);
             this.pnlModal.Controls.SetChildIndex(this.txtNombreTipoAuto, 0);
             this.pnlModal.Controls.SetChildIndex(this.lblNombre, 0);
@@ -68,17 +74,19 @@
             // 
             // btnAccionModal
             // 
-            this.btnAccionModal.Location = new System.Drawing.Point(35, 180);
+            this.btnAccionModal.Location = new System.Drawing.Point(184, 392);
             this.btnAccionModal.Click += new System.EventHandler(this.BtnAccionModal_Click);
             // 
             // lblTituloModal
             // 
-            this.lblTituloModal.Location = new System.Drawing.Point(137, 7);
+            this.lblTituloModal.Location = new System.Drawing.Point(208, 7);
+            this.lblTituloModal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblTituloModal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtNombreTipoAuto
             // 
             this.txtNombreTipoAuto.AccessibleName = "txtNombreTipoAuto";
-            this.txtNombreTipoAuto.Location = new System.Drawing.Point(21, 72);
+            this.txtNombreTipoAuto.Location = new System.Drawing.Point(110, 105);
             this.txtNombreTipoAuto.Name = "txtNombreTipoAuto";
             this.txtNombreTipoAuto.Size = new System.Drawing.Size(100, 20);
             this.txtNombreTipoAuto.TabIndex = 3;
@@ -90,7 +98,7 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(18, 48);
+            this.lblNombre.Location = new System.Drawing.Point(107, 89);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(123, 13);
             this.lblNombre.TabIndex = 4;

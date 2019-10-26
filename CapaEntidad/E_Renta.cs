@@ -19,7 +19,7 @@ namespace CapaEntidad
         public DateTime FechaFinRenta { get; set; }
         public int CodigoConductor { get; set; }
         public string Status { get; set; }
-        public int tarifaRenta { get; set; }
+        public Decimal tarifaRenta { get; set; }
         public DateTime CreateDateTime { get; set; }
         public DateTime ModifiedDateTime { get; set; }
         public int CreateByUserId { get; set; }

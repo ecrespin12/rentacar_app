@@ -90,11 +90,29 @@
     <Compile Include="admin\frmPrincipalAdmin.Designer.cs">
       <DependentUpon>frmPrincipalAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="caja\frmCajaPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caja\frmCajaPagos.Designer.cs">
+      <DependentUpon>frmCajaPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="caja\frmCajaPagos2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caja\frmCajaPagos2.Designer.cs">
+      <DependentUpon>frmCajaPagos2.cs</DependentUpon>
+    </Compile>
     <Compile Include="caja\frmContenedorCaja.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="caja\frmContenedorCaja.Designer.cs">
       <DependentUpon>frmContenedorCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="caja\frmPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caja\frmPagos.Designer.cs">
+      <DependentUpon>frmPagos.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -126,12 +144,6 @@
     <Compile Include="FrmModal.Designer.cs">
       <DependentUpon>FrmModal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPagos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPagos.Designer.cs">
-      <DependentUpon>frmPagos.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmTemplate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,8 +167,17 @@
     <EmbeddedResource Include="admin\frmPrincipalAdmin.resx">
       <DependentUpon>frmPrincipalAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="caja\frmCajaPagos.resx">
+      <DependentUpon>frmCajaPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="caja\frmCajaPagos2.resx">
+      <DependentUpon>frmCajaPagos2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="caja\frmContenedorCaja.resx">
       <DependentUpon>frmContenedorCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="caja\frmPagos.resx">
+      <DependentUpon>frmPagos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -172,9 +193,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModal.resx">
       <DependentUpon>FrmModal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPagos.resx">
-      <DependentUpon>frmPagos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTemplate.resx">
       <DependentUpon>frmTemplate.cs</DependentUpon>

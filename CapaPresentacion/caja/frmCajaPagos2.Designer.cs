@@ -1,6 +1,6 @@
-﻿namespace CapaPresentacion
+﻿namespace CapaPresentacion.caja
 {
-    partial class frmPagos
+    partial class frmCajaPagos2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gbxSearch_template.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // lblTitle_template
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 118);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 320);
-            this.dataGridView1.TabIndex = 0;
+            this.lblTitle_template.Location = new System.Drawing.Point(350, 7);
             // 
-            // frmPagos
+            // pnlGrid_template
+            // 
+            this.pnlGrid_template.Size = new System.Drawing.Size(782, 323);
+            // 
+            // frmCajaPagos2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "frmPagos";
-            this.Text = "frmPagos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Name = "frmCajaPagos2";
+            this.Text = "frmCajaPagos2";
+            this.Load += new System.EventHandler(this.frmCajaPagos2_Load);
+            this.gbxSearch_template.ResumeLayout(false);
+            this.gbxSearch_template.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

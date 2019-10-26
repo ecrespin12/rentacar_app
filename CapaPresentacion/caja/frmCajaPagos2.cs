@@ -8,13 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaPresentacion
+namespace CapaPresentacion.caja
 {
-    public partial class frmPagos : Form
+    public partial class frmCajaPagos2 : frmPagos
     {
-        public frmPagos()
+        public frmCajaPagos2()
         {
             InitializeComponent();
+        }
+
+        private void frmCajaPagos2_Load(object sender, EventArgs e)
+        {
         }
     }
 }

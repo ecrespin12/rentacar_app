@@ -117,32 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <metadata name="abonar.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
-  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>133, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tsBtnPagos.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN/SURBVFhHxdfJb9NoGAZwA+I+HDmBkDpiEyAYhhHDzqFc
-        4MQBhJgrN/4MZjQaMcNMRgWCKFAqsaoFRAGRkDShbVoS2tRJm611szR24jpbWYSE9PB+qWUc7GxtKl7p
-        py+RX7/fkzi2Wk5fpVLp3Pz8fIwIS+WMZQLtV91b1NGNFQWIErSCPSLhaNdY9sj/rm3q+PpVLBYFglZg
-        Adq7xnC00yPv/duxQ92idhUKhZYFsIVFNYAXBzs8yp5LL3ap21QvFoCAKc7yKMY9i2Z7O/I1gNWDXy1O
-        5ad/+narW5mXLMtCPp9HXk7hXfdmsnHR+BuH0W59jSPWIRzocGHvv3b8/Oez/L4L9/eo2xlLC5ARULzV
-        tiSFm20Yubwfjy0n0Hf5JF68CeCVL4hBf2RU3c5YLEAul0NOnIZyfUPrdO9Eee4CXt3OWCyAoihQpBlk
-        retap2snynNJNputHWBubg6MHLZBDvS0xNzUQHkm03CA5VI3AMFyqhmADgqENRnIkoCPo6chZxKmx5tQ
-        PUAmkzENkJvuwXvvKXx+yeGd7ywU4XnFcZfLhf7+fo3T6SwbHh6u6GNoj9oBCGvS5AN/4VMfR1YsrE/Z
-        65VQwre0nmQyaSqVSlXMUlUPIEmSQKA3b9uOD4845Py/40Mvh/yb83hPa9F1XOsx25xhAfSzVNUD0EmC
-        KIrQK9gOoXSfQ+HJBpTucciG6NYKdiITH9V62NftcDgMhoaGKmYxFKq5AFKsH7neNuS76dOT3G0OSu8m
-        SBF7RV+j6gZIp9PQE/m7EAMPII11Qu6kb+DuesjXab33o9bj9XpN+f3+illM3QCzs7PQJCKQrCsgXVuN
-        NN8D8QqHdMhRXsWrq6gnVe4LBALged5gcnLy6yxVcwGYO78gZeGQurYWqf9o7dq6sD48VtnXoLoBqIE1
-        aZLTQSQenUHc8gNmLnKYsayh92eRFCa1Ho/HY8rn81XMUtUOQExvqcSEG1N/cEiERwzHgsFg+TJ8KxQK
-        GXpJ9QCJREIgMBV5i6mL9OljvPnxBgmCsMgAOjREe9zqffscGBwcNDt36QHi8Tii0SgikUhNsVjMcG5T
-        AdiA8fHxRWO/Df08pqkA4XDY9Netxx631bC7QD+PacklWIqaAejaft8A9OiMmp3UShMTE9X/L7DZbOcG
-        BgZibrdbWA70l1PUbrf/pm5HxXFfAEQ49ABjuXt5AAAAAElFTkSuQmCC
-</value>
-  </data>
 </root>

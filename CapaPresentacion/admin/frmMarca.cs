@@ -123,8 +123,28 @@ namespace CapaPresentacion.admin
         private void FrmMarca_Load(object sender, EventArgs e)
         {
             pnlModal.Visible = false;
-
+            dgv_template.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             ListMarcas();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0) {
+                int codigo = (int)dgv_template.Rows[e.RowIndex].Cells[2].Value;
+                DataSet ds = negMarca.GetMarca(codigo);
+                DataTable dtMarca = ds.Tables[0];
+                if (dtMarca.Rows.Count > 0)
+                {
+                    string codigoMarca = dtMarca.Rows[0]["mar_codigo"].ToString();
+                    string nombreMarca = dtMarca.Rows[0]["mar_nombre"].ToString();
+                    pnlModal.Visible = true;
+                    txtNombre.Text = nombreMarca;
+                }
+                else
+                {
+                    //sin datos
+                }
+            }
         }
 
 

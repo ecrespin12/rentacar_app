@@ -11,6 +11,21 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -63,6 +78,12 @@
     <Compile Include="admin\frmPrincipalAdmin.Designer.cs">
       <DependentUpon>frmPrincipalAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="caja\frmContenedorCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="caja\frmContenedorCaja.Designer.cs">
+      <DependentUpon>frmContenedorCaja.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +114,12 @@
     <Compile Include="FrmModal.Designer.cs">
       <DependentUpon>FrmModal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagos.Designer.cs">
+      <DependentUpon>frmPagos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTemplate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +137,9 @@
     <EmbeddedResource Include="admin\frmPrincipalAdmin.resx">
       <DependentUpon>frmPrincipalAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="caja\frmContenedorCaja.resx">
+      <DependentUpon>frmContenedorCaja.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModal.resx">
       <DependentUpon>FrmModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagos.resx">
+      <DependentUpon>frmPagos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTemplate.resx">
       <DependentUpon>frmTemplate.cs</DependentUpon>
@@ -163,6 +196,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\writing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

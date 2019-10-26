@@ -32,14 +32,17 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(723, 127);
+            this.btnSalir.Location = new System.Drawing.Point(964, 156);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // frmPrincipalAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1232, 679);
+            this.ClientSize = new System.Drawing.Size(1643, 836);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "frmPrincipalAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RENTACAR - PRINCIPAL";

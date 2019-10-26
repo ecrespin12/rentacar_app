@@ -8,24 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace CapaPresentacion
 {
-    public partial class frmBaseCrud : Form
+    public partial class FrmModal : Form
     {
-        public frmBaseCrud()
+        public FrmModal()
         {
             InitializeComponent();
-        }
-
-        private void FrmBaseCrud_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnSalir_Click(object sender, EventArgs e)
-        {
- 
         }
     }
 }

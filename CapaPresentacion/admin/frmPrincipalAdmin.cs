@@ -22,5 +22,25 @@ namespace CapaPresentacion.admin
         {
 
         }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Desea salir del sistema?", "SALIR DEL SISTEMA", MessageBoxButtons.YesNo);
+   
+ 
+
+            if (result == DialogResult.Yes)
+            {
+
+
+                Application.Exit();
+
+
+            }
+            else if (result == DialogResult.No)
+            {
+
+            }
+        }
     }
 }

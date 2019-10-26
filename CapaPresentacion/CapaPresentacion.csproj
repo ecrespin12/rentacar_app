@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\frmMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\frmMarca.Designer.cs">
+      <DependentUpon>frmMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin\frmMarca2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\frmMarca2.Designer.cs">
+      <DependentUpon>frmMarca2.cs</DependentUpon>
+    </Compile>
     <Compile Include="admin\frmPrincipalAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,8 +87,26 @@
     <Compile Include="admin\frmContenedorAdmin.Designer.cs">
       <DependentUpon>frmContenedorAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmModal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModal.Designer.cs">
+      <DependentUpon>FrmModal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemplate.Designer.cs">
+      <DependentUpon>frmTemplate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="admin\frmMarca.resx">
+      <DependentUpon>frmMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\frmMarca2.resx">
+      <DependentUpon>frmMarca2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admin\frmPrincipalAdmin.resx">
       <DependentUpon>frmPrincipalAdmin.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +122,12 @@
     <EmbeddedResource Include="admin\frmContenedorAdmin.resx">
       <DependentUpon>frmContenedorAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmModal.resx">
+      <DependentUpon>FrmModal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemplate.resx">
+      <DependentUpon>frmTemplate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -100,6 +136,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -123,6 +160,9 @@
       <Project>{83615d1e-8a86-47bc-9232-5d7c0800f406}</Project>
       <Name>CapaNegocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\writing.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

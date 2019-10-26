@@ -1,6 +1,6 @@
-﻿namespace CapaPresentacion
+﻿namespace CapaPresentacion.admin
 {
-    partial class FormBaseCrud
+    partial class frmMarca2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.gbxSearch_template.SuspendLayout();
+            this.pnlModal.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(924, 399);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // FormBaseCrud
+            // frmMarca2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "FormBaseCrud";
-            this.Text = "FormBaseCrud";
+            this.ClientSize = new System.Drawing.Size(1165, 643);
+            this.Name = "frmMarca2";
+            this.Text = "frmMarca2";
+            this.Load += new System.EventHandler(this.FrmMarca2_Load);
+            this.gbxSearch_template.ResumeLayout(false);
+            this.gbxSearch_template.PerformLayout();
+            this.pnlModal.ResumeLayout(false);
+            this.pnlModal.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
     }
 }

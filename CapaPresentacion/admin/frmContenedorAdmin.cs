@@ -115,5 +115,25 @@ namespace CapaPresentacion
             this.pnlContenedor.Controls.Add(frm);
             frm.Show();
         }
+
+        private void MarcasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlContenedor.Controls.Clear();
+
+            frmMarca frm = new frmMarca();
+            frm.MdiParent = this;
+            this.pnlContenedor.Controls.Add(frm);
+            frm.Show();
+        }
+
+        private void Marcas2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlContenedor.Controls.Clear();
+
+            frmMarca2 frm = new frmMarca2();
+            frm.MdiParent = this;
+            this.pnlContenedor.Controls.Add(frm);
+            frm.Show();
+        }
     }
 }

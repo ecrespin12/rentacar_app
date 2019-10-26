@@ -145,10 +145,5 @@ namespace CapaPresentacion
             this.pnlContenedor.Controls.Add(frm);
             frm.Show();
         }
-
-        private void TiposDeAutosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

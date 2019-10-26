@@ -122,7 +122,7 @@ namespace CapaPresentacion.admin
             {
                 Actualizar();
             }
-            ListTipoAuto();
+            
         }
 
         void Insert()
@@ -143,6 +143,10 @@ namespace CapaPresentacion.admin
                 e_Tipo_Auto.nombre = txtNombreTipoAuto.Text.Trim();
                 n_Tipo_Auto.InsertTipoAuto(e_Tipo_Auto);
                 MessageBox.Show("Tipo de auto regristrado correctamente");
+                ListTipoAuto();
+                txtCodigo.Text = "";
+                txtNombreTipoAuto.Text = "";
+                txtSearch_template.Text = "";
                 pnlModal.Visible = false;
             }
             catch (Exception ex)
@@ -172,6 +176,10 @@ namespace CapaPresentacion.admin
                 e_Tipo_Auto.codigo = Convert.ToInt32(txtCodigo.Text.Trim());
                 n_Tipo_Auto.ActualizarTipoAuto(e_Tipo_Auto);
                 MessageBox.Show("Tipo de auto actualizado correctamente");
+                ListTipoAuto();
+                txtCodigo.Text = "";
+                txtNombreTipoAuto.Text = "";
+                txtSearch_template.Text = "";
                 pnlModal.Visible = false;
 
             }

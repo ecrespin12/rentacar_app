@@ -44,7 +44,7 @@
             // 
             // lblTitle_template
             // 
-            this.lblTitle_template.Location = new System.Drawing.Point(471, 7);
+            this.lblTitle_template.Location = new System.Drawing.Point(1, 1);
             this.lblTitle_template.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle_template.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -79,7 +79,7 @@
             // 
             // lblTituloModal
             // 
-            this.lblTituloModal.Location = new System.Drawing.Point(208, 7);
+            this.lblTituloModal.Location = new System.Drawing.Point(1, 1);
             this.lblTituloModal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblTituloModal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 

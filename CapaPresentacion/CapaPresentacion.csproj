@@ -119,6 +119,12 @@
     <Compile Include="renta\frmMenuRenta.Designer.cs">
       <DependentUpon>frmMenuRenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="renta\frmNuevaRenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="renta\frmNuevaRenta.Designer.cs">
+      <DependentUpon>frmNuevaRenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="renta\frmPrincipalRenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </Compile>
     <EmbeddedResource Include="renta\frmMenuRenta.resx">
       <DependentUpon>frmMenuRenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="renta\frmNuevaRenta.resx">
+      <DependentUpon>frmNuevaRenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="renta\frmPrincipalRenta.resx">
       <DependentUpon>frmPrincipalRenta.cs</DependentUpon>

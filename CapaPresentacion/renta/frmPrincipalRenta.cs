@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using CapaPresentacion.admin;
+
 namespace CapaPresentacion.renta
 {
     public partial class frmPrincipalRenta : Form
@@ -15,6 +17,16 @@ namespace CapaPresentacion.renta
         public frmPrincipalRenta()
         {
             InitializeComponent();
+        }
+
+        private void NewRentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlContenedor.Controls.Clear();
+
+            frmNuevaRenta frm = new frmNuevaRenta();
+            frm.MdiParent = this;
+            this.pnlContenedor.Controls.Add(frm);
+            frm.Show();
         }
     }
 }

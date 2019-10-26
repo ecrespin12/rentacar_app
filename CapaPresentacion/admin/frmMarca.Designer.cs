@@ -81,8 +81,9 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(143, 109);
+            this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(261, 22);
+            this.txtNombre.Size = new System.Drawing.Size(261, 30);
             this.txtNombre.TabIndex = 1;
             // 
             // epMarca

@@ -99,7 +99,7 @@ namespace CapaPresentacion.admin
 
         void GetMarca(int codigo) {
 
-            DataSet ds = negMarca.GetMarca(1);
+            DataSet ds = negMarca.GetMarca(2);
             DataTable dtMarca = ds.Tables[0];
             if (dtMarca.Rows.Count > 0)
             {

@@ -135,5 +135,15 @@ namespace CapaPresentacion
             this.pnlContenedor.Controls.Add(frm);
             frm.Show();
         }
+
+        private void ColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlContenedor.Controls.Clear();
+
+            frmColor2 frm = new frmColor2();
+            frm.MdiParent = this;
+            this.pnlContenedor.Controls.Add(frm);
+            frm.Show();
+        }
     }
 }

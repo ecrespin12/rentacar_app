@@ -25,7 +25,7 @@ namespace CapaNegocio
 
         public DataSet GetMarca(int codigo)
         {
-            return dMarca.GetMarca(codigo);
+            return dMarca.D_GetMarca(codigo);
         }
     }
 }

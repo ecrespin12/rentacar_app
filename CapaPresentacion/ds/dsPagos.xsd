@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPagos" targetNamespace="http://tempuri.org/dsPagos.xsd" xmlns:mstns="http://tempuri.org/dsPagos.xsd" xmlns="http://tempuri.org/dsPagos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BD_AlquilerAutosConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BD_AlquilerAutosConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CapaPresentacion.Properties.Settings.GlobalReference.Default.BD_AlquilerAutosConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BD_AlquilerAutosConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>  select * from tbl_pag_renta_detalle 
+  join tbl_par_pago_renta on par_codigo = pago_id
+  join tbl_usr_usuario on usr_codigo = par_codusr</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="pago_detalle_id" DataSetColumn="pago_detalle_id" />
+              <Mapping SourceColumn="pago_id" DataSetColumn="pago_id" />
+              <Mapping SourceColumn="articulo_id" DataSetColumn="articulo_id" />
+              <Mapping SourceColumn="cantidad" DataSetColumn="cantidad" />
+              <Mapping SourceColumn="precio_uni" DataSetColumn="precio_uni" />
+              <Mapping SourceColumn="impuestos" DataSetColumn="impuestos" />
+              <Mapping SourceColumn="totallinea" DataSetColumn="totallinea" />
+              <Mapping SourceColumn="totalpagado" DataSetColumn="totalpagado" />
+              <Mapping SourceColumn="estatus" DataSetColumn="estatus" />
+              <Mapping SourceColumn="par_codigo" DataSetColumn="par_codigo" />
+              <Mapping SourceColumn="par_codusr" DataSetColumn="par_codusr" />
+              <Mapping SourceColumn="par_forma_pago" DataSetColumn="par_forma_pago" />
+              <Mapping SourceColumn="par_monto" DataSetColumn="par_monto" />
+              <Mapping SourceColumn="par_fecha_pago" DataSetColumn="par_fecha_pago" />
+              <Mapping SourceColumn="par_estado" DataSetColumn="par_estado" />
+              <Mapping SourceColumn="usr_codigo" DataSetColumn="usr_codigo" />
+              <Mapping SourceColumn="usr_nombre" DataSetColumn="usr_nombre" />
+              <Mapping SourceColumn="usr_apellido" DataSetColumn="usr_apellido" />
+              <Mapping SourceColumn="usr_correo" DataSetColumn="usr_correo" />
+              <Mapping SourceColumn="usr_clave" DataSetColumn="usr_clave" />
+              <Mapping SourceColumn="usr_fecha_crea" DataSetColumn="usr_fecha_crea" />
+              <Mapping SourceColumn="usr_codigo_aux" DataSetColumn="usr_codigo_aux" />
+              <Mapping SourceColumn="usr_estado_usuario" DataSetColumn="usr_estado_usuario" />
+              <Mapping SourceColumn="usr_pais" DataSetColumn="usr_pais" />
+              <Mapping SourceColumn="usr_estado" DataSetColumn="usr_estado" />
+              <Mapping SourceColumn="usr_ciudad" DataSetColumn="usr_ciudad" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPagos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsPagos" msprop:Generator_UserDSName="dsPagos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pago_detalle_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnpago_detalle_id" msprop:Generator_ColumnPropNameInRow="pago_detalle_id" msprop:Generator_ColumnPropNameInTable="pago_detalle_idColumn" msprop:Generator_UserColumnName="pago_detalle_id" type="xs:int" />
+              <xs:element name="pago_id" msprop:Generator_ColumnVarNameInTable="columnpago_id" msprop:Generator_ColumnPropNameInRow="pago_id" msprop:Generator_ColumnPropNameInTable="pago_idColumn" msprop:Generator_UserColumnName="pago_id" type="xs:int" />
+              <xs:element name="articulo_id" msprop:Generator_ColumnVarNameInTable="columnarticulo_id" msprop:Generator_ColumnPropNameInRow="articulo_id" msprop:Generator_ColumnPropNameInTable="articulo_idColumn" msprop:Generator_UserColumnName="articulo_id" type="xs:int" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:int" />
+              <xs:element name="precio_uni" msprop:Generator_ColumnVarNameInTable="columnprecio_uni" msprop:Generator_ColumnPropNameInRow="precio_uni" msprop:Generator_ColumnPropNameInTable="precio_uniColumn" msprop:Generator_UserColumnName="precio_uni" type="xs:decimal" minOccurs="0" />
+              <xs:element name="impuestos" msprop:Generator_ColumnVarNameInTable="columnimpuestos" msprop:Generator_ColumnPropNameInRow="impuestos" msprop:Generator_ColumnPropNameInTable="impuestosColumn" msprop:Generator_UserColumnName="impuestos" type="xs:decimal" minOccurs="0" />
+              <xs:element name="totallinea" msprop:Generator_ColumnVarNameInTable="columntotallinea" msprop:Generator_ColumnPropNameInRow="totallinea" msprop:Generator_ColumnPropNameInTable="totallineaColumn" msprop:Generator_UserColumnName="totallinea" type="xs:decimal" minOccurs="0" />
+              <xs:element name="totalpagado" msprop:Generator_ColumnVarNameInTable="columntotalpagado" msprop:Generator_ColumnPropNameInRow="totalpagado" msprop:Generator_ColumnPropNameInTable="totalpagadoColumn" msprop:Generator_UserColumnName="totalpagado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="estatus" msprop:Generator_ColumnVarNameInTable="columnestatus" msprop:Generator_ColumnPropNameInRow="estatus" msprop:Generator_ColumnPropNameInTable="estatusColumn" msprop:Generator_UserColumnName="estatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="par_codigo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnpar_codigo" msprop:Generator_ColumnPropNameInRow="par_codigo" msprop:Generator_ColumnPropNameInTable="par_codigoColumn" msprop:Generator_UserColumnName="par_codigo" type="xs:int" />
+              <xs:element name="par_codusr" msprop:Generator_ColumnVarNameInTable="columnpar_codusr" msprop:Generator_ColumnPropNameInRow="par_codusr" msprop:Generator_ColumnPropNameInTable="par_codusrColumn" msprop:Generator_UserColumnName="par_codusr" type="xs:int" />
+              <xs:element name="par_forma_pago" msprop:Generator_ColumnVarNameInTable="columnpar_forma_pago" msprop:Generator_ColumnPropNameInRow="par_forma_pago" msprop:Generator_ColumnPropNameInTable="par_forma_pagoColumn" msprop:Generator_UserColumnName="par_forma_pago">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="par_monto" msprop:Generator_ColumnVarNameInTable="columnpar_monto" msprop:Generator_ColumnPropNameInRow="par_monto" msprop:Generator_ColumnPropNameInTable="par_montoColumn" msprop:Generator_UserColumnName="par_monto" type="xs:decimal" />
+              <xs:element name="par_fecha_pago" msprop:Generator_ColumnVarNameInTable="columnpar_fecha_pago" msprop:Generator_ColumnPropNameInRow="par_fecha_pago" msprop:Generator_ColumnPropNameInTable="par_fecha_pagoColumn" msprop:Generator_UserColumnName="par_fecha_pago" type="xs:dateTime" />
+              <xs:element name="par_estado" msprop:Generator_ColumnVarNameInTable="columnpar_estado" msprop:Generator_ColumnPropNameInRow="par_estado" msprop:Generator_ColumnPropNameInTable="par_estadoColumn" msprop:Generator_UserColumnName="par_estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="usr_codigo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnusr_codigo" msprop:Generator_ColumnPropNameInRow="usr_codigo" msprop:Generator_ColumnPropNameInTable="usr_codigoColumn" msprop:Generator_UserColumnName="usr_codigo" type="xs:int" />
+              <xs:element name="usr_nombre" msprop:Generator_ColumnVarNameInTable="columnusr_nombre" msprop:Generator_ColumnPropNameInRow="usr_nombre" msprop:Generator_ColumnPropNameInTable="usr_nombreColumn" msprop:Generator_UserColumnName="usr_nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="usr_apellido" msprop:Generator_ColumnVarNameInTable="columnusr_apellido" msprop:Generator_ColumnPropNameInRow="usr_apellido" msprop:Generator_ColumnPropNameInTable="usr_apellidoColumn" msprop:Generator_UserColumnName="usr_apellido">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="usr_correo" msprop:Generator_ColumnVarNameInTable="columnusr_correo" msprop:Generator_ColumnPropNameInRow="usr_correo" msprop:Generator_ColumnPropNameInTable="usr_correoColumn" msprop:Generator_UserColumnName="usr_correo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="usr_clave" msprop:Generator_ColumnVarNameInTable="columnusr_clave" msprop:Generator_ColumnPropNameInRow="usr_clave" msprop:Generator_ColumnPropNameInTable="usr_claveColumn" msprop:Generator_UserColumnName="usr_clave">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="usr_fecha_crea" msprop:Generator_ColumnVarNameInTable="columnusr_fecha_crea" msprop:Generator_ColumnPropNameInRow="usr_fecha_crea" msprop:Generator_ColumnPropNameInTable="usr_fecha_creaColumn" msprop:Generator_UserColumnName="usr_fecha_crea" type="xs:dateTime" />
+              <xs:element name="usr_codigo_aux" msprop:Generator_ColumnVarNameInTable="columnusr_codigo_aux" msprop:Generator_ColumnPropNameInRow="usr_codigo_aux" msprop:Generator_ColumnPropNameInTable="usr_codigo_auxColumn" msprop:Generator_UserColumnName="usr_codigo_aux">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="usr_estado_usuario" msprop:Generator_ColumnVarNameInTable="columnusr_estado_usuario" msprop:Generator_ColumnPropNameInRow="usr_estado_usuario" msprop:Generator_ColumnPropNameInTable="usr_estado_usuarioColumn" msprop:Generator_UserColumnName="usr_estado_usuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="usr_pais" msprop:Generator_ColumnVarNameInTable="columnusr_pais" msprop:Generator_ColumnPropNameInRow="usr_pais" msprop:Generator_ColumnPropNameInTable="usr_paisColumn" msprop:Generator_UserColumnName="usr_pais">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="usr_estado" msprop:Generator_ColumnVarNameInTable="columnusr_estado" msprop:Generator_ColumnPropNameInRow="usr_estado" msprop:Generator_ColumnPropNameInTable="usr_estadoColumn" msprop:Generator_UserColumnName="usr_estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="usr_ciudad" msprop:Generator_ColumnVarNameInTable="columnusr_ciudad" msprop:Generator_ColumnPropNameInRow="usr_ciudad" msprop:Generator_ColumnPropNameInTable="usr_ciudadColumn" msprop:Generator_UserColumnName="usr_ciudad">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:pago_detalle_id" />
+      <xs:field xpath="mstns:par_codigo" />
+      <xs:field xpath="mstns:usr_codigo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

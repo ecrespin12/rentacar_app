@@ -36,6 +36,23 @@ namespace CapaDatos
 
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@nombre", mar.NombreMarca);
+            cmd.Parameters.AddWithValue("@estatus", mar.Estatus);
+
+            if (con.State == ConnectionState.Open)
+                con.Close();
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public void D_ActualizarMarca(E_Marca mar)
+        {
+            SqlCommand cmd = new SqlCommand("marca_actualizar_sp", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@nombre", mar.NombreMarca);
+            cmd.Parameters.AddWithValue("@estatus", mar.Estatus);
+            cmd.Parameters.AddWithValue("@id", mar.MarcaID);
 
             if (con.State == ConnectionState.Open)
                 con.Close();

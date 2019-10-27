@@ -145,5 +145,10 @@ namespace CapaPresentacion
             this.pnlContenedor.Controls.Add(frm);
             frm.Show();
         }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

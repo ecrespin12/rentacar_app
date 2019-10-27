@@ -28,5 +28,10 @@ namespace CapaPresentacion.renta
             this.pnlContenedor.Controls.Add(frm);
             frm.Show();
         }
+
+        private void ToolStripButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

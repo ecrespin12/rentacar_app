@@ -165,24 +165,29 @@ namespace CapaPresentacion.renta
                 {
                     if (Convert.ToBoolean(fila.Cells["insertar"].Value))
                     {
+                 
+
                         renta.CodigoAuto = Convert.ToInt32(fila.Cells[4].Value);
 
 
-                
-                        renta.CodigoUsuario = 4;
-                        renta.DepositoRenta = Convert.ToDecimal("0.00"); ;
-                        renta.FechaInicioRenta =Convert.ToDateTime("2018-01-01");
-                        renta.FechaFinRenta = Convert.ToDateTime("2018-01-01");
-                        renta.CodigoConductor = Convert.ToInt32("3"); ;
-                        renta.tarifaRenta = Convert.ToDecimal("1"); ;
+
+                        renta.CodigoUsuario = 4; //quemado
+                        renta.DepositoRenta = Convert.ToDecimal(txtDeposito.Text); ;
+                        renta.FechaInicioRenta = Convert.ToDateTime(dtpDesde.Text);
+                        renta.FechaFinRenta = Convert.ToDateTime(dtpHasta.Text);
+                        renta.CodigoConductor = Convert.ToInt32("1"); ;
+                        renta.tarifaRenta = Convert.ToInt32("1"); ;
                         renta.Status = "R";
 
 
                         N_Renta.N_InsertRenta(renta, fila.Cells["codigoAuto"].Value.ToString());
                     }
+                    else
+                        MessageBox.Show("Error al procesar la informacion. Contacte con el administrador");
+
                 }
 
-         
+
 
 
 
@@ -228,12 +233,16 @@ namespace CapaPresentacion.renta
                  }
 
                      txtMontoCobrar.Text = Convert.ToString(total);
+            this.btnGuardarRenta.Visible = true;
 
         }
 
         private void BtnGuardarRenta_Click(object sender, EventArgs e)
         {
             Registrar();
+            this.btnGuardarRenta.Visible = false;
+            txtMontoCobrar.Text = "0";
+            txtDeposito.Text = "";
         }
 
         private void Button1_Click(object sender, EventArgs e)

@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using CapaPresentacion.admin;
-using CapaPresentacion.caja;
 
 namespace CapaPresentacion
 {
@@ -26,8 +25,8 @@ namespace CapaPresentacion
 
 
         public bool login(string user, string pass){
-            usuario = user;
-           bool login = ((user == "admin" && pass == "admin") || (user == "caja" && pass == "caja")) ? true : false;
+
+           bool login = (user == "admin" && pass == "admin") ? true : false;
 
             return login;
         }
@@ -47,30 +46,11 @@ namespace CapaPresentacion
 
             if (logueo == true)
             {
-                switch (usuario)
-                {
-                    case "admin":
-                        frmContenedorAdmin frmAdmin = new frmContenedorAdmin();
-                        this.Hide();
-                        frmAdmin.ShowDialog();
-                        frmAdmin.Show();
-                        this.Close();
-                        break;
-                    case "caja":
-                        frmContenedorCaja frmCaja = new frmContenedorCaja();
-                        this.Hide();
-                        frmCaja.ShowDialog();
-                        frmCaja.Show();
-                        this.Close();
-                        break;
-                    default:
-                        frmContenedorAdmin frmDefault = new frmContenedorAdmin();
-                        this.Hide();
-                        frmDefault.ShowDialog();
-                        frmDefault.Show();
-                        this.Close();
-                        break;
-                }                
+                frmContenedorAdmin frmPrincipal = new frmContenedorAdmin();
+                this.Hide();
+                frmPrincipal.ShowDialog();
+                frmPrincipal.Show();
+                this.Close();
             }
             else {
 

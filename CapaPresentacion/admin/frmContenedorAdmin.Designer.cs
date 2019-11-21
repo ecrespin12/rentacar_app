@@ -61,6 +61,7 @@
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.tiposDeAutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -210,7 +211,8 @@
             this.nuevoVehiculoToolStripMenuItem,
             this.marcasToolStripMenuItem,
             this.marcas2ToolStripMenuItem,
-            this.colorToolStripMenuItem});
+            this.colorToolStripMenuItem,
+            this.tiposDeAutoToolStripMenuItem});
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Black;
@@ -222,27 +224,27 @@
             // nuevoVehiculoToolStripMenuItem
             // 
             this.nuevoVehiculoToolStripMenuItem.Name = "nuevoVehiculoToolStripMenuItem";
-            this.nuevoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.nuevoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoVehiculoToolStripMenuItem.Text = "Nuevo Vehiculo";
             // 
             // marcasToolStripMenuItem
             // 
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
-            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.marcasToolStripMenuItem.Text = "Marcas";
             this.marcasToolStripMenuItem.Click += new System.EventHandler(this.MarcasToolStripMenuItem_Click);
             // 
             // marcas2ToolStripMenuItem
             // 
             this.marcas2ToolStripMenuItem.Name = "marcas2ToolStripMenuItem";
-            this.marcas2ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.marcas2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.marcas2ToolStripMenuItem.Text = "Marcas 2";
             this.marcas2ToolStripMenuItem.Click += new System.EventHandler(this.Marcas2ToolStripMenuItem_Click);
             // 
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.colorToolStripMenuItem.Text = "Color";
             this.colorToolStripMenuItem.Click += new System.EventHandler(this.ColorToolStripMenuItem_Click);
             // 
@@ -261,7 +263,6 @@
             this.toolStripButton6.Size = new System.Drawing.Size(120, 55);
             this.toolStripButton6.Text = "Informes";
             this.toolStripButton6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
             // toolStripSeparator7
             // 
@@ -297,9 +298,9 @@
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 587);
+            this.statusStrip.Location = new System.Drawing.Point(0, 659);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1028, 22);
+            this.statusStrip.Size = new System.Drawing.Size(1443, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -332,11 +333,18 @@
             this.pnlContenedor.Size = new System.Drawing.Size(1450, 590);
             this.pnlContenedor.TabIndex = 4;
             // 
+            // tiposDeAutoToolStripMenuItem
+            // 
+            this.tiposDeAutoToolStripMenuItem.Name = "tiposDeAutoToolStripMenuItem";
+            this.tiposDeAutoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tiposDeAutoToolStripMenuItem.Text = "Tipos de Auto";
+            this.tiposDeAutoToolStripMenuItem.Click += new System.EventHandler(this.TiposDeAutoToolStripMenuItem_Click);
+            // 
             // frmContenedorAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 609);
+            this.ClientSize = new System.Drawing.Size(1443, 681);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);
@@ -386,6 +394,7 @@
         private System.Windows.Forms.Panel pnlContenedor;
         private System.Windows.Forms.ToolStripMenuItem marcas2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tiposDeAutoToolStripMenuItem;
     }
 }
 

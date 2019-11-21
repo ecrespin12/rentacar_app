@@ -45,10 +45,9 @@
             this.pnlModal.Controls.Add(this.lblTituloModal);
             this.pnlModal.Controls.Add(this.btnAccionModal);
             this.pnlModal.Controls.Add(this.btnCloseModal);
-            this.pnlModal.Location = new System.Drawing.Point(92, 10);
-            this.pnlModal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlModal.Location = new System.Drawing.Point(122, 12);
             this.pnlModal.Name = "pnlModal";
-            this.pnlModal.Size = new System.Drawing.Size(372, 386);
+            this.pnlModal.Size = new System.Drawing.Size(495, 474);
             this.pnlModal.TabIndex = 0;
             // 
             // lblTituloModal
@@ -56,10 +55,9 @@
             this.lblTituloModal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTituloModal.AutoSize = true;
             this.lblTituloModal.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloModal.Location = new System.Drawing.Point(154, 7);
-            this.lblTituloModal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTituloModal.Location = new System.Drawing.Point(205, 9);
             this.lblTituloModal.Name = "lblTituloModal";
-            this.lblTituloModal.Size = new System.Drawing.Size(72, 25);
+            this.lblTituloModal.Size = new System.Drawing.Size(86, 30);
             this.lblTituloModal.TabIndex = 2;
             this.lblTituloModal.Text = "TITULO";
             // 
@@ -68,12 +66,11 @@
             this.btnAccionModal.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnAccionModal.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnAccionModal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccionModal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccionModal.Font = new System.Drawing.Font("Meiryo UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccionModal.ForeColor = System.Drawing.Color.White;
-            this.btnAccionModal.Location = new System.Drawing.Point(130, 343);
-            this.btnAccionModal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAccionModal.Location = new System.Drawing.Point(173, 422);
             this.btnAccionModal.Name = "btnAccionModal";
-            this.btnAccionModal.Size = new System.Drawing.Size(114, 30);
+            this.btnAccionModal.Size = new System.Drawing.Size(152, 37);
             this.btnAccionModal.TabIndex = 1;
             this.btnAccionModal.Text = "ACCION";
             this.btnAccionModal.UseVisualStyleBackColor = false;
@@ -85,23 +82,21 @@
             this.btnCloseModal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCloseModal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCloseModal.ForeColor = System.Drawing.Color.White;
-            this.btnCloseModal.Location = new System.Drawing.Point(328, -1);
-            this.btnCloseModal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCloseModal.Location = new System.Drawing.Point(438, -1);
             this.btnCloseModal.Name = "btnCloseModal";
-            this.btnCloseModal.Size = new System.Drawing.Size(42, 29);
+            this.btnCloseModal.Size = new System.Drawing.Size(56, 36);
             this.btnCloseModal.TabIndex = 0;
             this.btnCloseModal.Text = "X";
             this.btnCloseModal.UseVisualStyleBackColor = false;
             // 
             // FrmModal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(538, 416);
+            this.ClientSize = new System.Drawing.Size(717, 512);
             this.Controls.Add(this.pnlModal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmModal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmModal";

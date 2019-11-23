@@ -130,7 +130,7 @@ namespace CapaPresentacion
         {
             pnlContenedor.Controls.Clear();
 
-            frmMarca2 frm = new frmMarca2();
+            frmColor frm = new frmColor();
             frm.MdiParent = this;
             this.pnlContenedor.Controls.Add(frm);
             frm.Show();
@@ -140,17 +140,15 @@ namespace CapaPresentacion
         {
             pnlContenedor.Controls.Clear();
 
-            frmColor2 frm = new frmColor2();
+            frmTipoAuto frm = new frmTipoAuto();
             frm.MdiParent = this;
             this.pnlContenedor.Controls.Add(frm);
             frm.Show();
         }
 
-        private void TiposDeAutoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void nuevoVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pnlContenedor.Controls.Clear();
-
-            frmTipoAuto frm = new frmTipoAuto();
+            frmAuto frm = new frmAuto();
             frm.MdiParent = this;
             this.pnlContenedor.Controls.Add(frm);
             frm.Show();

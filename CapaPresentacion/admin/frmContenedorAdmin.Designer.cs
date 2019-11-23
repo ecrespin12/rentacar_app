@@ -211,8 +211,7 @@
             this.nuevoVehiculoToolStripMenuItem,
             this.marcasToolStripMenuItem,
             this.marcas2ToolStripMenuItem,
-            this.colorToolStripMenuItem,
-            this.tiposDeAutoToolStripMenuItem});
+            this.colorToolStripMenuItem});
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Black;
@@ -224,8 +223,9 @@
             // nuevoVehiculoToolStripMenuItem
             // 
             this.nuevoVehiculoToolStripMenuItem.Name = "nuevoVehiculoToolStripMenuItem";
-            this.nuevoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.nuevoVehiculoToolStripMenuItem.Text = "Nuevo Vehiculo";
+            this.nuevoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoVehiculoToolStripMenuItem.Text = "Vehiculos";
+            this.nuevoVehiculoToolStripMenuItem.Click += new System.EventHandler(this.nuevoVehiculoToolStripMenuItem_Click);
             // 
             // marcasToolStripMenuItem
             // 
@@ -237,15 +237,15 @@
             // marcas2ToolStripMenuItem
             // 
             this.marcas2ToolStripMenuItem.Name = "marcas2ToolStripMenuItem";
-            this.marcas2ToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.marcas2ToolStripMenuItem.Text = "Marcas 2";
+            this.marcas2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.marcas2ToolStripMenuItem.Text = "Colores";
             this.marcas2ToolStripMenuItem.Click += new System.EventHandler(this.Marcas2ToolStripMenuItem_Click);
             // 
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-            this.colorToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.colorToolStripMenuItem.Text = "Color";
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colorToolStripMenuItem.Text = "Tipos de vehiculos";
             this.colorToolStripMenuItem.Click += new System.EventHandler(this.ColorToolStripMenuItem_Click);
             // 
             // tiposDeAutoToolStripMenuItem
@@ -395,7 +395,6 @@
         private System.Windows.Forms.Panel pnlContenedor;
         private System.Windows.Forms.ToolStripMenuItem marcas2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tiposDeAutoToolStripMenuItem;
     }
 }
 

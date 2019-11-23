@@ -45,29 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\frmAuto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\frmAuto.Designer.cs">
+      <DependentUpon>frmAuto.cs</DependentUpon>
+    </Compile>
     <Compile Include="admin\frmColor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="admin\frmColor.Designer.cs">
       <DependentUpon>frmColor.cs</DependentUpon>
     </Compile>
-    <Compile Include="admin\frmColor2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin\frmColor2.Designer.cs">
-      <DependentUpon>frmColor2.cs</DependentUpon>
-    </Compile>
     <Compile Include="admin\frmMarca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="admin\frmMarca.Designer.cs">
       <DependentUpon>frmMarca.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin\frmMarca2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin\frmMarca2.Designer.cs">
-      <DependentUpon>frmMarca2.cs</DependentUpon>
     </Compile>
     <Compile Include="admin\frmPrincipalAdmin.cs">
       <SubType>Form</SubType>
@@ -111,6 +105,12 @@
     <Compile Include="admin\frmContenedorAdmin.Designer.cs">
       <DependentUpon>frmContenedorAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaja.Designer.cs">
+      <DependentUpon>frmCaja.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmModal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,17 +125,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="renta\frmMenuRenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="renta\frmMenuRenta.Designer.cs">
+      <DependentUpon>frmMenuRenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="renta\frmNuevaRenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="renta\frmNuevaRenta.Designer.cs">
+      <DependentUpon>frmNuevaRenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="renta\frmPrincipalRenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="renta\frmPrincipalRenta.Designer.cs">
+      <DependentUpon>frmPrincipalRenta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin\frmAuto.resx">
+      <DependentUpon>frmAuto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admin\frmColor.resx">
       <DependentUpon>frmColor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="admin\frmColor2.resx">
-      <DependentUpon>frmColor2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="admin\frmMarca.resx">
       <DependentUpon>frmMarca.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="admin\frmMarca2.resx">
-      <DependentUpon>frmMarca2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="admin\frmPrincipalAdmin.resx">
       <DependentUpon>frmPrincipalAdmin.cs</DependentUpon>
@@ -158,6 +173,9 @@
     <EmbeddedResource Include="admin\frmContenedorAdmin.resx">
       <DependentUpon>frmContenedorAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCaja.resx">
+      <DependentUpon>frmCaja.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmModal.resx">
       <DependentUpon>FrmModal.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +192,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="renta\frmMenuRenta.resx">
+      <DependentUpon>frmMenuRenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="renta\frmNuevaRenta.resx">
+      <DependentUpon>frmNuevaRenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="renta\frmPrincipalRenta.resx">
+      <DependentUpon>frmPrincipalRenta.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -185,7 +212,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
@@ -199,6 +228,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\writing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\004-house-with-chimney.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002-contract.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

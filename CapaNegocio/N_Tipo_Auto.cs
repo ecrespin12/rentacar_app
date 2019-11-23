@@ -31,6 +31,11 @@ namespace CapaNegocio
             dTipoAuto.D_ActualizarTipoAuto(instancia);
         }
 
+        public void EliminarTipoAuto(E_Tipo_Auto instancia)
+        {
+            dTipoAuto.D_EliminarTipoAuto(instancia);
+        }
+
         public DataSet GetTipoAuto(int codigo)
         {
             return dTipoAuto.D_GetTipoAuto(codigo);

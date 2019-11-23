@@ -28,10 +28,18 @@ namespace CapaPresentacion.renta
         private void FrmNuevaRenta_Load(object sender, EventArgs e)
         {
             MostrarAutosDisponibles();
+            ListaConductores();
         }
 
 
-   
+
+        private void ListaConductores()
+        {
+            cboConductor.DataSource = N_Renta.ListaConductores();
+            cboConductor.DisplayMember = "NombreConductor";
+            cboConductor.ValueMember = "CodigoConductor";
+        }
+
 
         private void MostrarAutosDisponibles()
         {
@@ -175,7 +183,7 @@ namespace CapaPresentacion.renta
                         renta.DepositoRenta = Convert.ToDecimal(txtDeposito.Text); ;
                         renta.FechaInicioRenta = Convert.ToDateTime(dtpDesde.Text);
                         renta.FechaFinRenta = Convert.ToDateTime(dtpHasta.Text);
-                        renta.CodigoConductor = Convert.ToInt32("1"); ;
+                        renta.CodigoConductor = Convert.ToInt32(cboConductor.SelectedValue);
                         renta.tarifaRenta = Convert.ToInt32("1"); ;
                         renta.Status = "R";
 

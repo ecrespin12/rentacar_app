@@ -80,6 +80,39 @@ namespace CapaDatos
         }
 
 
+        public static List<E_Conductor> ListaConductores()
+        {
+            List<E_Conductor> lista = new List<E_Conductor>();
+
+            SqlDataReader dr;
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlConexion"].ConnectionString);
+            SqlCommand cmd = new SqlCommand("select con_codigo, CONCAT(usr_nombre,' ', usr_apellido) as conductor from tbl_con_conductor  inner join tbl_usr_usuario on con_codusr = usr_codigo", con);
+            cmd.CommandType = CommandType.Text;
+
+            con.Open();
+            try
+            {
+                dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+
+            var leer = dr;
+
+            while (leer.Read())
+            {
+                E_Conductor conductor = new E_Conductor();
+                conductor.CodigoConductor = leer.GetInt32(0);
+                conductor.NombreConductor = leer.GetString(1);
+                lista.Add(conductor);
+            }
+
+            return lista;
+        }
+
 
         public DataSet D_GetTarifasAutos(int codigo)
         {

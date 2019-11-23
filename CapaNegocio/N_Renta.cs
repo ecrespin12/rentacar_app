@@ -21,7 +21,10 @@ namespace CapaNegocio
             return D_Renta.D_GetAutosDisponibles(renta, grid);
         }
 
-
+        public static List<E_Conductor> ListaConductores()
+        {
+            return D_Renta.ListaConductores();
+        }
         public DataSet N_GetTarifasAuto(int codigo)
         {
             return dRenta.D_GetTarifasAutos(codigo);

@@ -47,7 +47,7 @@
     <Compile Include="D_Marca.cs" />
     <Compile Include="D_Renta.cs" />
     <Compile Include="D_Tipo_Auto.cs" />
-	<Compile Include="D_Auto.cs" />
+    <Compile Include="D_Auto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

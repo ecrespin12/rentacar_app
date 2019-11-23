@@ -1,14 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using CapaPresentacion.admin;
 
 namespace CapaPresentacion
 {
@@ -24,9 +15,10 @@ namespace CapaPresentacion
         string usuario = "", password = "";
 
 
-        public bool login(string user, string pass){
+        public bool login(string user, string pass)
+        {
 
-           bool login = (user == "admin" && pass == "admin") ? true : false;
+            bool login = ((user == "admin" && pass == "admin") || (user == "caja" && pass == "caja")) ? true : false;
 
             return login;
         }
@@ -46,19 +38,47 @@ namespace CapaPresentacion
 
             if (logueo == true)
             {
-                frmContenedorAdmin frmPrincipal = new frmContenedorAdmin();
-                this.Hide();
-                frmPrincipal.ShowDialog();
-                frmPrincipal.Show();
-                this.Close();
+                switch (usuario)
+                {
+                    case "admin":
+                        frmContenedorAdmin frmAdmin = new frmContenedorAdmin();
+                        this.Hide();
+                        frmAdmin.ShowDialog();
+                        frmAdmin.Show();
+                        this.Close();
+                        break;
+                    case "caja":
+                        frmCaja frmCaja = new frmCaja();
+                        this.Hide();
+                        frmCaja.ShowDialog();
+                        frmCaja.Show();
+                        this.Close();
+                        break;
+                    default:
+                        //frmContenedorAdmin frmDefault = new frmContenedorAdmin();
+                        //this.Hide();
+                        //frmDefault.ShowDialog();
+                        //frmDefault.Show();
+                        //this.Close();
+                        MessageBox.Show("Credenciales incorrectas o usuario no existe", "Iniciar Sesion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        txtUsuario.Text = "";
+                        txtPassword.Text = "";
+                        txtUsuario.Focus();
+                        break;
+                }
             }
-            else {
+            //if (logueo == true)
+            //{
+            //    frmContenedorAdmin frmPrincipal = new frmContenedorAdmin();
+            //    this.Hide();
+            //    frmPrincipal.ShowDialog();
+            //    frmPrincipal.Show();
+            //    this.Close();
+            //}
+            //else {
 
-                MessageBox.Show("Credenciales incorrectas o usuario no existe", "Iniciar Sesion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtUsuario.Text = "";
-                txtPassword.Text = "";
-                txtUsuario.Focus();
-            }
+
+            //}
         }
     }
 }

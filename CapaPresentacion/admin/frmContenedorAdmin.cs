@@ -126,7 +126,9 @@ namespace CapaPresentacion
             frm.Show();
         }
 
-        private void Marcas2ToolStripMenuItem_Click(object sender, EventArgs e)
+
+
+        private void ColorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             pnlContenedor.Controls.Clear();
 
@@ -136,7 +138,7 @@ namespace CapaPresentacion
             frm.Show();
         }
 
-        private void ColorToolStripMenuItem_Click(object sender, EventArgs e)
+        private void TiposDeAutoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             pnlContenedor.Controls.Clear();
 
@@ -146,17 +148,11 @@ namespace CapaPresentacion
             frm.Show();
         }
 
-        private void nuevoVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void NuevoVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAuto frm = new frmAuto();
-            frm.MdiParent = this;
-            this.pnlContenedor.Controls.Add(frm);
-            frm.Show();
-        }
+            pnlContenedor.Controls.Clear();
 
-        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmUsuarios frm = new frmUsuarios();
+            frmAuto frm = new frmAuto();
             frm.MdiParent = this;
             this.pnlContenedor.Controls.Add(frm);
             frm.Show();

@@ -75,6 +75,12 @@
     <Compile Include="admin\frmTipoAuto.Designer.cs">
       <DependentUpon>frmTipoAuto.cs</DependentUpon>
     </Compile>
+    <Compile Include="admin\frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin\frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,12 @@
     </Compile>
     <Compile Include="admin\frmContenedorAdmin.Designer.cs">
       <DependentUpon>frmContenedorAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaja.Designer.cs">
+      <DependentUpon>frmCaja.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmModal.cs">
       <SubType>Form</SubType>
@@ -146,6 +158,9 @@
     <EmbeddedResource Include="admin\frmTipoAuto.resx">
       <DependentUpon>frmTipoAuto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="admin\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="admin\frmContenedorAdmin.resx">
       <DependentUpon>frmContenedorAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCaja.resx">
+      <DependentUpon>frmCaja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmModal.resx">
       <DependentUpon>FrmModal.cs</DependentUpon>
@@ -194,7 +212,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">

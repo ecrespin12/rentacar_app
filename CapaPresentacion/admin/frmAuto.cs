@@ -27,33 +27,47 @@ namespace CapaPresentacion.admin
 
         void ListAuto()
         {
-
             dt = n_Auto.N_ListAuto();
             dgv_template.DataSource = dt;
 
-
-
             dgv_template.Columns[0].HeaderText = "Editar";
             dgv_template.Columns[1].HeaderText = "Eliminar";
-
             dgv_template.Columns[2].HeaderText = "Codigo";
-            dgv_template.Columns[2].Name = "codigo";
-
-            dgv_template.Columns[3].HeaderText = "Nombre";
-            dgv_template.Columns[3].Name = "nombres";
+            dgv_template.Columns[3].HeaderText = "Marca";
+            dgv_template.Columns[4].HeaderText = "Color";
+            dgv_template.Columns[5].HeaderText = "Tipo";
+            dgv_template.Columns[6].HeaderText = "Modelo";
+            dgv_template.Columns[7].HeaderText = "Año";
+            dgv_template.Columns[8].HeaderText = "Placa";
+            dgv_template.Columns[9].HeaderText = "Estado";
+            
+            
 
             dgv_template.Columns[2].DisplayIndex = 0;
             dgv_template.Columns[3].DisplayIndex = 1;
-            dgv_template.Columns["editar"].DisplayIndex = 2;
-            dgv_template.Columns["eliminar"].DisplayIndex = 3;
+            dgv_template.Columns[4].DisplayIndex = 2;
+            dgv_template.Columns[5].DisplayIndex = 3;
+            dgv_template.Columns[6].DisplayIndex = 4;
+            dgv_template.Columns[7].DisplayIndex = 5;
+            dgv_template.Columns[8].DisplayIndex = 6;
+            dgv_template.Columns[9].DisplayIndex = 7;
+            dgv_template.Columns[0].DisplayIndex = 8;
+            dgv_template.Columns[1].DisplayIndex = 9;
 
+            dgv_template.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dgv_template.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[8].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[9].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
         private void FrmAuto_Load(object sender, EventArgs e)
         {
             pnlModal.Visible = false;
-            lblTitle_template.Text = "CATALOGO DE AUTOS";
+            lblTitle_template.Text = "CATALOGO DE VEHICULOS";
 
             dgv_template.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
 

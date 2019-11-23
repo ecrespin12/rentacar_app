@@ -35,19 +35,19 @@ namespace CapaPresentacion.admin
 
 
             dgv_template.Columns[0].HeaderText = "Editar";
+
             dgv_template.Columns[1].HeaderText = "Eliminar";
 
             dgv_template.Columns[2].HeaderText = "Codigo";
-            dgv_template.Columns[2].Name = "codigo";
 
             dgv_template.Columns[3].HeaderText = "Nombre";
-            dgv_template.Columns[3].Name = "nombres";
 
             dgv_template.Columns[2].DisplayIndex = 0;
             dgv_template.Columns[3].DisplayIndex = 1;
-            dgv_template.Columns["editar"].DisplayIndex = 2;
-            dgv_template.Columns["eliminar"].DisplayIndex = 3;
 
+            dgv_template.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dgv_template.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 

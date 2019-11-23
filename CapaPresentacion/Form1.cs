@@ -31,11 +31,6 @@ namespace CapaPresentacion
             return login;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
             usuario = txtUsuario.Text.Trim();

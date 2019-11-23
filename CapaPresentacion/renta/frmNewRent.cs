@@ -8,15 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaPresentacion
+namespace CapaPresentacion.renta
 {
-    public partial class frmTemplate : FrmModal
+    public partial class frmNewRent : Form
     {
-        public frmTemplate()
+        public frmNewRent()
         {
             InitializeComponent();
         }
-
-
     }
 }

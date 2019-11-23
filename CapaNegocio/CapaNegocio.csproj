@@ -42,9 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="N_Auto.cs" />
     <Compile Include="N_Color.cs" />
     <Compile Include="N_Marca.cs" />
     <Compile Include="N_Renta.cs" />
+    <Compile Include="N_Tipo_Auto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

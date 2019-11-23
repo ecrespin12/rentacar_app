@@ -48,6 +48,7 @@
             this.toolStripButton4 = new System.Windows.Forms.ToolStripDropDownButton();
             this.nuevoVehiculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marcas2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tiposDeAutoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
@@ -93,7 +94,7 @@
             this.toolStrip.Location = new System.Drawing.Point(0, 3);
             this.toolStrip.Name = "toolStrip";
             this.toolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip.Size = new System.Drawing.Size(1377, 60);
+            this.toolStrip.Size = new System.Drawing.Size(1450, 60);
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "ToolStrip";
             // 
@@ -209,8 +210,8 @@
             this.toolStripButton4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoVehiculoToolStripMenuItem,
             this.marcasToolStripMenuItem,
-            this.colorToolStripMenuItem,
-            this.tiposDeAutoToolStripMenuItem});
+            this.marcas2ToolStripMenuItem,
+            this.colorToolStripMenuItem});
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Black;
@@ -224,27 +225,34 @@
             this.nuevoVehiculoToolStripMenuItem.Name = "nuevoVehiculoToolStripMenuItem";
             this.nuevoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoVehiculoToolStripMenuItem.Text = "Vehiculos";
-            this.nuevoVehiculoToolStripMenuItem.Click += new System.EventHandler(this.NuevoVehiculoToolStripMenuItem_Click);
+            this.nuevoVehiculoToolStripMenuItem.Click += new System.EventHandler(this.nuevoVehiculoToolStripMenuItem_Click);
             // 
             // marcasToolStripMenuItem
             // 
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
-            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.marcasToolStripMenuItem.Text = "Marcas";
             this.marcasToolStripMenuItem.Click += new System.EventHandler(this.MarcasToolStripMenuItem_Click);
+            // 
+            // marcas2ToolStripMenuItem
+            // 
+            this.marcas2ToolStripMenuItem.Name = "marcas2ToolStripMenuItem";
+            this.marcas2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.marcas2ToolStripMenuItem.Text = "Colores";
+            this.marcas2ToolStripMenuItem.Click += new System.EventHandler(this.Marcas2ToolStripMenuItem_Click);
             // 
             // colorToolStripMenuItem
             // 
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
             this.colorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.colorToolStripMenuItem.Text = "Colores";
+            this.colorToolStripMenuItem.Text = "Tipos de vehiculos";
             this.colorToolStripMenuItem.Click += new System.EventHandler(this.ColorToolStripMenuItem_Click);
             // 
             // tiposDeAutoToolStripMenuItem
             // 
             this.tiposDeAutoToolStripMenuItem.Name = "tiposDeAutoToolStripMenuItem";
-            this.tiposDeAutoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.tiposDeAutoToolStripMenuItem.Text = "Tipos de vehiculos";
+            this.tiposDeAutoToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.tiposDeAutoToolStripMenuItem.Text = "Tipos de Auto";
             this.tiposDeAutoToolStripMenuItem.Click += new System.EventHandler(this.TiposDeAutoToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
@@ -284,8 +292,9 @@
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // toolStripSeparator8
             // 
@@ -299,7 +308,7 @@
             this.toolStripStatusLabel});
             this.statusStrip.Location = new System.Drawing.Point(0, 659);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(1370, 22);
+            this.statusStrip.Size = new System.Drawing.Size(1443, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -329,14 +338,14 @@
             this.pnlContenedor.BackColor = System.Drawing.Color.White;
             this.pnlContenedor.Location = new System.Drawing.Point(0, 65);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(1377, 590);
+            this.pnlContenedor.Size = new System.Drawing.Size(1450, 590);
             this.pnlContenedor.TabIndex = 4;
             // 
             // frmContenedorAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 681);
+            this.ClientSize = new System.Drawing.Size(1443, 681);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);
@@ -384,8 +393,8 @@
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton newToolStripButton;
         private System.Windows.Forms.Panel pnlContenedor;
+        private System.Windows.Forms.ToolStripMenuItem marcas2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tiposDeAutoToolStripMenuItem;
     }
 }
 

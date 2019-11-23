@@ -43,8 +43,12 @@
   <ItemGroup>
     <Compile Include="E_Auto.cs" />
     <Compile Include="E_Color.cs" />
+    <Compile Include="E_Conductor.cs" />
     <Compile Include="E_Marca.cs" />
+    <Compile Include="E_Pagos.cs" />
+    <Compile Include="E_Renta.cs" />
     <Compile Include="E_Tipo_Auto.cs" />
+    <Compile Include="E_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -22,7 +22,6 @@ namespace CapaPresentacion.admin
         }
 
         DataTable dt;
-        E_Tipo_Auto e_Tipo_Auto = new E_Tipo_Auto();
         N_Tipo_Auto n_Tipo_Auto = new N_Tipo_Auto();
 
         void ListTipoAuto()

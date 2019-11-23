@@ -147,5 +147,15 @@ namespace CapaPresentacion
             this.pnlContenedor.Controls.Add(frm);
             frm.Show();
         }
+
+        private void NuevoVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlContenedor.Controls.Clear();
+
+            frmAuto frm = new frmAuto();
+            frm.MdiParent = this;
+            this.pnlContenedor.Controls.Add(frm);
+            frm.Show();
+        }
     }
 }

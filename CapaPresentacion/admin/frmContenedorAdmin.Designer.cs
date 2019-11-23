@@ -223,7 +223,8 @@
             // 
             this.nuevoVehiculoToolStripMenuItem.Name = "nuevoVehiculoToolStripMenuItem";
             this.nuevoVehiculoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.nuevoVehiculoToolStripMenuItem.Text = "Nuevo Vehiculo";
+            this.nuevoVehiculoToolStripMenuItem.Text = "Vehiculos";
+            this.nuevoVehiculoToolStripMenuItem.Click += new System.EventHandler(this.NuevoVehiculoToolStripMenuItem_Click);
             // 
             // marcasToolStripMenuItem
             // 
@@ -236,14 +237,14 @@
             // 
             this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
             this.colorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.colorToolStripMenuItem.Text = "Color";
+            this.colorToolStripMenuItem.Text = "Colores";
             this.colorToolStripMenuItem.Click += new System.EventHandler(this.ColorToolStripMenuItem_Click);
             // 
             // tiposDeAutoToolStripMenuItem
             // 
             this.tiposDeAutoToolStripMenuItem.Name = "tiposDeAutoToolStripMenuItem";
             this.tiposDeAutoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.tiposDeAutoToolStripMenuItem.Text = "Tipos de Auto";
+            this.tiposDeAutoToolStripMenuItem.Text = "Tipos de vehiculos";
             this.tiposDeAutoToolStripMenuItem.Click += new System.EventHandler(this.TiposDeAutoToolStripMenuItem_Click);
             // 
             // toolStripSeparator5

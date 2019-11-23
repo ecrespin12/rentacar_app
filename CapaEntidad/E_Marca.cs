@@ -16,7 +16,7 @@ namespace CapaEntidad
      
         public int MarcaID { get; set; }
         public string NombreMarca { get; set; }
-        public string Estatus { get; set; }
+
 
     }
 }

@@ -51,23 +51,11 @@
     <Compile Include="admin\frmColor.Designer.cs">
       <DependentUpon>frmColor.cs</DependentUpon>
     </Compile>
-    <Compile Include="admin\frmColor2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin\frmColor2.Designer.cs">
-      <DependentUpon>frmColor2.cs</DependentUpon>
-    </Compile>
     <Compile Include="admin\frmMarca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="admin\frmMarca.Designer.cs">
       <DependentUpon>frmMarca.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin\frmMarca2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin\frmMarca2.Designer.cs">
-      <DependentUpon>frmMarca2.cs</DependentUpon>
     </Compile>
     <Compile Include="admin\frmPrincipalAdmin.cs">
       <SubType>Form</SubType>
@@ -122,14 +110,8 @@
     <EmbeddedResource Include="admin\frmColor.resx">
       <DependentUpon>frmColor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="admin\frmColor2.resx">
-      <DependentUpon>frmColor2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="admin\frmMarca.resx">
       <DependentUpon>frmMarca.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="admin\frmMarca2.resx">
-      <DependentUpon>frmMarca2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="admin\frmPrincipalAdmin.resx">
       <DependentUpon>frmPrincipalAdmin.cs</DependentUpon>

@@ -35,7 +35,7 @@ namespace CapaDatos
 
 
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@nombre", instancia.nombre);
+            cmd.Parameters.AddWithValue("@nombre", instancia.estado);
 
             if (con.State == ConnectionState.Open)
                 con.Close();
@@ -49,8 +49,8 @@ namespace CapaDatos
         {
             SqlCommand cmd = new SqlCommand("auto_actualizar_sp", con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@nombre", instancia.nombre);
-            cmd.Parameters.AddWithValue("@id", instancia.codigo);
+            cmd.Parameters.AddWithValue("@nombre", instancia.estado);
+            cmd.Parameters.AddWithValue("@id", instancia.codAuto);
 
             if (con.State == ConnectionState.Open)
                 con.Close();
@@ -64,7 +64,7 @@ namespace CapaDatos
         {
             SqlCommand cmd = new SqlCommand("auto_eliminar_sp", con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@id", instancia.codigo);
+            cmd.Parameters.AddWithValue("@id", instancia.codAuto);
 
             if (con.State == ConnectionState.Open)
                 con.Close();

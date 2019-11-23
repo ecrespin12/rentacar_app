@@ -20,7 +20,11 @@ namespace CapaDatos
 
         public DataTable D_ListAuto()
         {
-            SqlCommand cmd = new SqlCommand("SELECT * FROM tbl_aut_auto", con);
+            SqlCommand cmd = new SqlCommand(
+                "SELECT au.aut_codigo,ma.mar_nombre,co.col_nombre,ti.tia_nombre,au.aut_codmar,au.aut_codcol,au.aut_codtia,au.aut_modelo,au.aut_anio,au.aut_placa,au.aut_estado " +
+                "FROM tbl_aut_auto as au, tbl_mar_marca as ma, tbl_col_color as co, tbl_tia_tipo_auto as ti "+
+                "where au.aut_codmar = ma.mar_codigo and au.aut_codcol = co.col_codigo and au.aut_codtia = ti.tia_codigo"
+                , con);
             cmd.CommandType = CommandType.Text;
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);

@@ -113,6 +113,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="admin\frmAuto.resx">
+      <DependentUpon>frmAuto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admin\frmColor.resx">
       <DependentUpon>frmColor.cs</DependentUpon>
     </EmbeddedResource>

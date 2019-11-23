@@ -36,12 +36,17 @@ namespace CapaPresentacion.admin
             dgv_template.Columns[3].HeaderText = "Marca";
             dgv_template.Columns[4].HeaderText = "Color";
             dgv_template.Columns[5].HeaderText = "Tipo";
-            dgv_template.Columns[6].HeaderText = "Modelo";
-            dgv_template.Columns[7].HeaderText = "Año";
-            dgv_template.Columns[8].HeaderText = "Placa";
-            dgv_template.Columns[9].HeaderText = "Estado";
-            
-            
+            dgv_template.Columns[6].HeaderText = "codmar";
+            dgv_template.Columns[7].HeaderText = "codcol";
+            dgv_template.Columns[8].HeaderText = "codtia";
+            dgv_template.Columns[9].HeaderText = "Modelo";
+            dgv_template.Columns[10].HeaderText = "Año";
+            dgv_template.Columns[11].HeaderText = "Placa";
+            dgv_template.Columns[12].HeaderText = "Estado";
+
+            dgv_template.Columns[6].Visible=false;
+            dgv_template.Columns[7].Visible=false;
+            dgv_template.Columns[8].Visible = false;
 
             dgv_template.Columns[2].DisplayIndex = 0;
             dgv_template.Columns[3].DisplayIndex = 1;
@@ -51,8 +56,11 @@ namespace CapaPresentacion.admin
             dgv_template.Columns[7].DisplayIndex = 5;
             dgv_template.Columns[8].DisplayIndex = 6;
             dgv_template.Columns[9].DisplayIndex = 7;
-            dgv_template.Columns[0].DisplayIndex = 8;
-            dgv_template.Columns[1].DisplayIndex = 9;
+            dgv_template.Columns[10].DisplayIndex = 8;
+            dgv_template.Columns[11].DisplayIndex = 9;
+            dgv_template.Columns[12].DisplayIndex = 10;
+            dgv_template.Columns[0].DisplayIndex = 11;
+            dgv_template.Columns[1].DisplayIndex = 12;
 
             dgv_template.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dgv_template.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -62,6 +70,9 @@ namespace CapaPresentacion.admin
             dgv_template.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dgv_template.Columns[8].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dgv_template.Columns[9].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[10].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[11].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[12].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
         private void FrmAuto_Load(object sender, EventArgs e)
@@ -259,6 +270,26 @@ namespace CapaPresentacion.admin
         private void TxtSearch_template_TextChanged(object sender, EventArgs e)
         {
             Buscar();
+        }
+
+        private void LblEstado_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtEstado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

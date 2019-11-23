@@ -31,7 +31,7 @@ namespace CapaNegocio
             dAuto.D_ActualizarAuto(instancia);
         }
 
-        public void EliminarTipoAuto(E_Auto instancia)
+        public void EliminarAuto(E_Auto instancia)
         {
             dAuto.D_EliminarAuto(instancia);
         }

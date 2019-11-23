@@ -42,9 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataHelper.cs" />
     <Compile Include="D_Color.cs" />
     <Compile Include="D_Marca.cs" />
     <Compile Include="D_Tipo_Auto.cs" />
+    <Compile Include="D_Usuario.cs" />
+    <Compile Include="ICrud.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

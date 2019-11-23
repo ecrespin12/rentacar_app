@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CapaNegocio;
 using CapaPresentacion.admin;
 
 namespace CapaPresentacion
@@ -19,16 +19,16 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
-
+        N_Usuarios n_usuarios = new N_Usuarios();
         bool logueo = false;
         string usuario = "", password = "";
 
 
-        public bool login(string user, string pass){
-
-           bool login = (user == "admin" && pass == "admin") ? true : false;
-
-            return login;
+        public bool login(string user, string pass)
+        {
+            DataSet result = n_usuarios.ExisteUsuario(user, pass);
+            DataTable dt = result.Tables[0];
+            return dt.Rows.Count > 0;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -52,7 +52,8 @@ namespace CapaPresentacion
                 frmPrincipal.Show();
                 this.Close();
             }
-            else {
+            else
+            {
 
                 MessageBox.Show("Credenciales incorrectas o usuario no existe", "Iniciar Sesion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtUsuario.Text = "";

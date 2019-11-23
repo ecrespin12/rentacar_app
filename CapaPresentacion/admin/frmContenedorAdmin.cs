@@ -155,5 +155,13 @@ namespace CapaPresentacion
             this.pnlContenedor.Controls.Add(frm);
             frm.Show();
         }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmUsuarios frm = new frmUsuarios();
+            frm.MdiParent = this;
+            this.pnlContenedor.Controls.Add(frm);
+            frm.Show();
+        }
     }
 }

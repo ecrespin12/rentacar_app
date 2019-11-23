@@ -126,33 +126,21 @@ namespace CapaPresentacion
             frm.Show();
         }
 
+        private void Marcas2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pnlContenedor.Controls.Clear();
 
+            frmMarca2 frm = new frmMarca2();
+            frm.MdiParent = this;
+            this.pnlContenedor.Controls.Add(frm);
+            frm.Show();
+        }
 
         private void ColorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             pnlContenedor.Controls.Clear();
 
-            frmColor frm = new frmColor();
-            frm.MdiParent = this;
-            this.pnlContenedor.Controls.Add(frm);
-            frm.Show();
-        }
-
-        private void TiposDeAutoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            pnlContenedor.Controls.Clear();
-
-            frmTipoAuto frm = new frmTipoAuto();
-            frm.MdiParent = this;
-            this.pnlContenedor.Controls.Add(frm);
-            frm.Show();
-        }
-
-        private void NuevoVehiculoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            pnlContenedor.Controls.Clear();
-
-            frmAuto frm = new frmAuto();
+            frmColor2 frm = new frmColor2();
             frm.MdiParent = this;
             this.pnlContenedor.Controls.Add(frm);
             frm.Show();

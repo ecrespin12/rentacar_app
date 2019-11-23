@@ -117,14 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="writing" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\writing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="toolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="tsBtnInicio.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFQSURBVFhH7ZY9TsNAEIX352oUUETQIIFoaDgDJS03iLgD
+        dJTQB4kSgWgAiQtAESj4CW/wA82OHVhjGynSftIrPG925kXrRHGFhca7cAPd8/E/CVtY/ATNqKnUaJKw
+        g/o5dcZid7zz+1zaIH/ANhD2lPfCYjew4FQNFT1Aj2nNn1TdPQfAkDs1UHRJS7wr490iyKF67hIgbGLA
+        VA2D/DHNb1A7SnsS/S0Ahtr7fpca7QbCLnrezBlR+wBYVLtv5+KI9g/EEXrNexFeaeaBA/L91gOuaWWD
+        MxdmRs7vRd5959LwXjxjxzbtlPb3nUvTe6F/LwAK9r5nuMtV2j0Q1+x82UkzbEjKL8GcSAPN3uDiid4F
+        YbcBycbDBfBjPs7ntwD8JHPFthqVXwKUACVACbBYAeIytJTq8+94bamW9NTPxZXKbxFgGGUEqIjrw6hg
+        ce4Dwv0hxhG/n2gAAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="004-house-with-chimney" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\004-house-with-chimney.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="002-contract" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\002-contract.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="toolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALOSURBVFhH5ZRBaxNBFMfjTVBvgh79AH4FaUDRS7UqxUsQ
+        FSyiBxEvRVBpT1ashZpKm7RYkqppodikK7SaONuKUZtspFCVaiJFaIoVvKQGT/LMm8wss5uXZNNNoeCD
+        H7MzCfn/5mVmPduuFlbW9xu51fPpXL4Tx3fffuwTH21tAcAOI5u/YSzm/xi5PJiU5iiDn4uvbk3xcBEa
+        T0xDbMLPR7k2vfg0fkdv6dokXhFDF2+72Pnj/qvQd+mgCc5xPZVdgb7XbdCjexsGJUQUXZnc6gW5czVc
+        Ek9oXGLGYDCxMAzjmfsw8v6aGRAxymI4qgy+PeZMQLY/GnlACuA6F0wtQSK9xJ+TXz41UaB02ssd0EgB
+        2YHZzDxMLozB5IchSwfqUVcAr5qzM3CCDKhHXQGs8r2Xt0ATt6C8c2Tc6CV/vBa9+mEY0U9BjHWEQB/d
+        KaLownuOVw13KkMRnEeMe2SABIPC7Axo7CK8Ydfhs94Fa6wPfrMAFFmQs8GCMRFVvbBVeNVCqVv8pIdS
+        Nx21/Tu7awapFJ77oTDVz5/XWfBvQQ/sFVF0oQAVUI9lvbsivJgIwK+BbtjQBsy1Uhd8Ioouu8AT47gl
+        SMUXvQy7BqPg8b+EI6Mx+JkYhhktDIceTfO1arRMLcJtYw1Oz36cE7GlA5jN81OqCoxn2iD59Swf1WDJ
+        uVgH7Bl6xn+0PRy17H5WiOz2zzgTwMOGoyowv+yDh8mj/IWiBlcjrl+xSFB/QfFVgL6OlEAo1QpzJQkc
+        1aBapFinRUI9hA0LjKVbeQewEzjHv0OOdmSXQnq75epV0IhAxDwDJ/ncKRO6D1ZYj3sBRA2379qO/aw0
+        RcANrgWoXdZC7YD96ll5USnR7A5g0IFQkrNpAWqXtbB3wLWAGypDVQgB6lVM7ZKCelPSwRKHAm6ggyXb
+        UUBWScCLEm6hgyU1BJpWZLDkvxBwXB7PP0PoVopztDqUAAAAAElFTkSuQmCC
+</value>
   </data>
 </root>

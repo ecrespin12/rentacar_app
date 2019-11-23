@@ -92,10 +92,14 @@ namespace CapaPresentacion.admin
             {
                 try {
                     int codigo = (int)dgv_template.Rows[e.RowIndex].Cells[2].Value;
-                    DialogResult resp = MessageBox.Show("¿Esta seguro de eliminar este tipo de auto?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+                    DataSet ds = n_Tipo_Auto.GetTipoAuto(codigo);
+                    DataTable dt = ds.Tables[0];
+                    int cod = Convert.ToInt32(dt.Rows[0]["tia_codigo"].ToString());
+                    DialogResult resp = MessageBox.Show("¿Esta seguro de eliminar este tipo de auto \n " +
+                        "con codigo="+cod+"?", "Confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
                     if (resp == DialogResult.Yes)
                     {
-
+                        Eliminar(Convert.ToInt32(cod));
                     }
                 } catch(Exception excepcion) {
                     
@@ -156,6 +160,27 @@ namespace CapaPresentacion.admin
             }
         }
 
+        void Eliminar(int cod)
+        {
+            E_Tipo_Auto e_Tipo_Auto = new E_Tipo_Auto();
+            try
+            {
+                e_Tipo_Auto.codigo = cod;
+                n_Tipo_Auto.EliminarTipoAuto(e_Tipo_Auto);
+                MessageBox.Show("Tipo de auto eliminado correctamente");
+                ListTipoAuto();
+                txtCodigo.Text = "";
+                txtNombreTipoAuto.Text = "";
+                txtSearch_template.Text = "";
+                pnlModal.Visible = false;
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
 
         void Actualizar()
         {

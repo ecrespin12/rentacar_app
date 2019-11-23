@@ -77,12 +77,6 @@ namespace CapaPresentacion.admin
 
         private void FrmAuto_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'bD_AlquilerAutosDataSetTipoAuto.tbl_tia_tipo_auto' Puede moverla o quitarla según sea necesario.
-            this.tbl_tia_tipo_autoTableAdapter.Fill(this.bD_AlquilerAutosDataSetTipoAuto.tbl_tia_tipo_auto);
-            // TODO: esta línea de código carga datos en la tabla 'bD_AlquilerAutosDataSet1.tbl_col_color' Puede moverla o quitarla según sea necesario.
-            this.tbl_col_colorTableAdapter.Fill(this.bD_AlquilerAutosDataSet1.tbl_col_color);
-            // TODO: esta línea de código carga datos en la tabla 'bD_AlquilerAutosDataSet.tbl_mar_marca' Puede moverla o quitarla según sea necesario.
-            this.tbl_mar_marcaTableAdapter.Fill(this.bD_AlquilerAutosDataSet.tbl_mar_marca);
             pnlModal.Visible = false;
             lblTitle_template.Text = "CATALOGO DE VEHICULOS";
 
@@ -109,7 +103,7 @@ namespace CapaPresentacion.admin
                         btnAccionModal.Text = "ACTUALIZAR";
                         txtCodigo.Text = cod;
                         lblTituloModal.Text = "ACTUALIZACIÓN DE VEHICULO";
-                        //txtEstado.Text = nom;
+                        txtEstado.Text = nom;
                     }
                     else
                     {
@@ -166,20 +160,20 @@ namespace CapaPresentacion.admin
             {
 
                 //error provider si es null o vacio retornar mensaje a usuario
-                //if (string.IsNullOrEmpty(txtEstado.Text))
-                //{
-                //    epErrorEstado.SetError(txtEstado, "Debe ingresar un estado para el vehiculo");
-                //    txtEstado.Focus();
-                //    return;
-                //}
-                //epErrorEstado.SetError(txtEstado, "");
+                if (string.IsNullOrEmpty(txtEstado.Text))
+                {
+                    epErrorEstado.SetError(txtEstado, "Debe ingresar un estado para el vehiculo");
+                    txtEstado.Focus();
+                    return;
+                }
+                epErrorEstado.SetError(txtEstado, "");
 
-                //e_Auto.estado = txtEstado.Text.Trim();
+                e_Auto.estado = txtEstado.Text.Trim();
                 n_Auto.InsertAuto(e_Auto);
                 MessageBox.Show("Vehiculo regristrado correctamente");
                 ListAuto();
                 txtCodigo.Text = "";
-                //txtEstado.Text = "";
+                txtEstado.Text = "";
                 txtSearch_template.Text = "";
                 pnlModal.Visible = false;
             }
@@ -200,7 +194,7 @@ namespace CapaPresentacion.admin
                 MessageBox.Show("Vehiculo eliminado correctamente");
                 ListAuto();
                 txtCodigo.Text = "";
-                //txtEstado.Text = "";
+                txtEstado.Text = "";
                 txtSearch_template.Text = "";
                 pnlModal.Visible = false;
 
@@ -219,21 +213,21 @@ namespace CapaPresentacion.admin
             {
 
                 //error provider si es null o vacio retornar mensaje a usuario
-                //if (string.IsNullOrEmpty(txtEstado.Text))
-                //{
-                //    epErrorEstado.SetError(txtEstado, "Debe ingresar un estado para el vehiculo");
-                //    txtEstado.Focus();
-                //    return;
-                //}
-                //epErrorEstado.SetError(txtEstado, "");
+                if (string.IsNullOrEmpty(txtEstado.Text))
+                {
+                    epErrorEstado.SetError(txtEstado, "Debe ingresar un estado para el vehiculo");
+                    txtEstado.Focus();
+                    return;
+                }
+                epErrorEstado.SetError(txtEstado, "");
 
-                //e_Auto.estado = txtEstado.Text.Trim();
+                e_Auto.estado = txtEstado.Text.Trim();
                 e_Auto.codAuto = Convert.ToInt32(txtCodigo.Text.Trim());
                 n_Auto.ActualizarAuto(e_Auto);
                 MessageBox.Show("Vehiculo actualizado correctamente");
                 ListAuto();
                 txtCodigo.Text = "";
-                //txtEstado.Text = "";
+                txtEstado.Text = "";
                 txtSearch_template.Text = "";
                 pnlModal.Visible = false;
 
@@ -268,7 +262,7 @@ namespace CapaPresentacion.admin
         {
             pnlModal.Visible = false;
             txtCodigo.Text = "";
-            //txtEstado.Text = "";
+            txtEstado.Text = "";
             txtSearch_template.Text = "";
             ListAuto();
         }

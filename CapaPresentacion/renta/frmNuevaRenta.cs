@@ -171,7 +171,7 @@ namespace CapaPresentacion.renta
 
 
 
-                        renta.CodigoUsuario = 4; //quemado
+                        renta.CodigoUsuario = 2; //quemado
                         renta.DepositoRenta = Convert.ToDecimal(txtDeposito.Text); ;
                         renta.FechaInicioRenta = Convert.ToDateTime(dtpDesde.Text);
                         renta.FechaFinRenta = Convert.ToDateTime(dtpHasta.Text);
@@ -182,8 +182,7 @@ namespace CapaPresentacion.renta
 
                         N_Renta.N_InsertRenta(renta, fila.Cells["codigoAuto"].Value.ToString());
                     }
-                    else
-                        MessageBox.Show("Error al procesar la informacion. Contacte con el administrador");
+         
 
                 }
 
@@ -203,11 +202,11 @@ namespace CapaPresentacion.renta
 
         private void BtnProcesar_Click(object sender, EventArgs e)
         {
-      
-     
-          
 
-                 decimal total = 0, recargo = 0, cuota = 0, recVenc = 0, valRecargo = 0;
+
+
+
+            decimal total = 0 ;
 
                  for (int i = 0; i < dgvAutosDisponibles.Rows.Count; i++){
 

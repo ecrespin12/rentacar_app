@@ -48,7 +48,8 @@ namespace CapaPresentacion.admin
                 entMarca.Estatus = cbestatus.SelectedItem.ToString();
                 negMarca.InsertMarca(entMarca);
                 MessageBox.Show("Marca regristrada correctamente");
-
+                pnlModal.Visible = false;
+                ListMarcas();
             }
             catch (Exception ex) {
 
@@ -76,7 +77,8 @@ namespace CapaPresentacion.admin
                 entMarca.Estatus = cbestatus.SelectedItem.ToString();
                 negMarca.ActualizarMarca(entMarca);
                 MessageBox.Show("Marca actualiza correctamente");
-
+                pnlModal.Visible = false;
+                ListMarcas();
             }
             catch (Exception ex)
             {
@@ -112,8 +114,12 @@ namespace CapaPresentacion.admin
             dgv_template.Columns[4].DisplayIndex = 2;
             dgv_template.Columns["editar"].DisplayIndex = 3;
             dgv_template.Columns["eliminar"].DisplayIndex = 4;
+            dgv_template.Columns[1].Visible=false;
 
             dgv_template.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgv_template.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
 
@@ -154,9 +160,9 @@ namespace CapaPresentacion.admin
                 DataTable dtMarca = ds.Tables[0];
                 if (dtMarca.Rows.Count > 0)
                 {
-                    string codigoMarca = dtMarca.Rows[e.RowIndex]["mar_codigo"].ToString();
-                    string nombreMarca = dtMarca.Rows[e.RowIndex]["mar_nombre"].ToString();
-                    string estatus = dtMarca.Rows[e.RowIndex]["mar_estatus"].ToString();
+                    string codigoMarca = dtMarca.Rows[0]["mar_codigo"].ToString();
+                    string nombreMarca = dtMarca.Rows[0]["mar_nombre"].ToString();
+                    string estatus = dtMarca.Rows[0]["mar_estatus"].ToString();
                     pnlModal.Visible = true;
                     btnAccionModal.Text = "ACTUALIZAR";
                     cbestatus.SelectedItem = estatus;
@@ -173,7 +179,6 @@ namespace CapaPresentacion.admin
                 int codigo = (int)dgv_template.Rows[e.RowIndex].Cells[2].Value;
                 DialogResult resp = MessageBox.Show("Esta seguro de eliminar esta marca", "Confirmacion", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation);
                 if (resp == DialogResult.Yes) {
-
 
                 }
             }

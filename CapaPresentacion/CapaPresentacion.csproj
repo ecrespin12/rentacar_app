@@ -90,6 +90,11 @@
     <Compile Include="admin\frmPrincipalAdmin.Designer.cs">
       <DependentUpon>frmPrincipalAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ds\dsPagos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPagos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="caja\frmCajaPagos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +212,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="rdlc\rdlc_pagos.rdlc" />
+    <None Include="ds\dsPagos.xsc">
+      <DependentUpon>dsPagos.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dsPagos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPagos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\dsPagos.xss">
+      <DependentUpon>dsPagos.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

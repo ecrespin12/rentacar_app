@@ -23,6 +23,12 @@ namespace CapaNegocio
             dMarca.D_InsertMarca(mar);
         }
 
+        public void ActualizarMarca(E_Marca mar)
+        {
+
+            dMarca.D_ActualizarMarca(mar);
+        }
+
         public DataSet GetMarca(int codigo)
         {
             return dMarca.D_GetMarca(codigo);

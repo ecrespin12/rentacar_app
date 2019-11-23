@@ -47,28 +47,30 @@
             // 
             // pnlModal
             // 
-            this.pnlModal.Location = new System.Drawing.Point(270, 10);
-            this.pnlModal.Size = new System.Drawing.Size(323, 386);
+            this.pnlModal.Location = new System.Drawing.Point(360, 12);
+            this.pnlModal.Size = new System.Drawing.Size(430, 474);
             // 
             // btnCloseModal
             // 
-            this.btnCloseModal.Location = new System.Drawing.Point(280, -1);
+            this.btnCloseModal.Location = new System.Drawing.Point(373, -1);
             // 
             // btnAccionModal
             // 
-            this.btnAccionModal.Location = new System.Drawing.Point(106, 343);
+            this.btnAccionModal.Location = new System.Drawing.Point(141, 422);
             // 
             // lblTituloModal
             // 
-            this.lblTituloModal.Location = new System.Drawing.Point(130, 7);
+            this.lblTituloModal.Location = new System.Drawing.Point(173, 9);
             // 
             // gbxSearch_template
             // 
             this.gbxSearch_template.Controls.Add(this.lblSearch_template);
             this.gbxSearch_template.Controls.Add(this.txtSearch_template);
-            this.gbxSearch_template.Location = new System.Drawing.Point(20, 47);
+            this.gbxSearch_template.Location = new System.Drawing.Point(27, 58);
+            this.gbxSearch_template.Margin = new System.Windows.Forms.Padding(4);
             this.gbxSearch_template.Name = "gbxSearch_template";
-            this.gbxSearch_template.Size = new System.Drawing.Size(450, 73);
+            this.gbxSearch_template.Padding = new System.Windows.Forms.Padding(4);
+            this.gbxSearch_template.Size = new System.Drawing.Size(600, 90);
             this.gbxSearch_template.TabIndex = 46;
             this.gbxSearch_template.TabStop = false;
             // 
@@ -76,9 +78,10 @@
             // 
             this.lblSearch_template.AutoSize = true;
             this.lblSearch_template.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSearch_template.Location = new System.Drawing.Point(11, 12);
+            this.lblSearch_template.Location = new System.Drawing.Point(15, 15);
+            this.lblSearch_template.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSearch_template.Name = "lblSearch_template";
-            this.lblSearch_template.Size = new System.Drawing.Size(48, 17);
+            this.lblSearch_template.Size = new System.Drawing.Size(60, 23);
             this.lblSearch_template.TabIndex = 2;
             this.lblSearch_template.Text = "Buscar";
             // 
@@ -87,11 +90,12 @@
             this.txtSearch_template.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch_template.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch_template.Location = new System.Drawing.Point(14, 33);
+            this.txtSearch_template.Location = new System.Drawing.Point(19, 41);
+            this.txtSearch_template.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch_template.MaxLength = 28;
             this.txtSearch_template.Multiline = true;
             this.txtSearch_template.Name = "txtSearch_template";
-            this.txtSearch_template.Size = new System.Drawing.Size(418, 28);
+            this.txtSearch_template.Size = new System.Drawing.Size(556, 34);
             this.txtSearch_template.TabIndex = 0;
             // 
             // lblTitle_template
@@ -100,9 +104,10 @@
             this.lblTitle_template.AutoSize = true;
             this.lblTitle_template.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle_template.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lblTitle_template.Location = new System.Drawing.Point(393, 7);
+            this.lblTitle_template.Location = new System.Drawing.Point(524, 9);
+            this.lblTitle_template.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle_template.Name = "lblTitle_template";
-            this.lblTitle_template.Size = new System.Drawing.Size(72, 32);
+            this.lblTitle_template.Size = new System.Drawing.Size(92, 41);
             this.lblTitle_template.TabIndex = 84;
             this.lblTitle_template.Text = "TITLE";
             // 
@@ -112,10 +117,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlGrid_template.Controls.Add(this.dgv_template);
-            this.pnlGrid_template.Location = new System.Drawing.Point(9, 128);
-            this.pnlGrid_template.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlGrid_template.Location = new System.Drawing.Point(12, 158);
             this.pnlGrid_template.Name = "pnlGrid_template";
-            this.pnlGrid_template.Size = new System.Drawing.Size(869, 421);
+            this.pnlGrid_template.Size = new System.Drawing.Size(1159, 518);
             this.pnlGrid_template.TabIndex = 85;
             // 
             // dgv_template
@@ -141,7 +145,8 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_template.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_template.Location = new System.Drawing.Point(11, 14);
+            this.dgv_template.Location = new System.Drawing.Point(15, 17);
+            this.dgv_template.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_template.Name = "dgv_template";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
@@ -153,9 +158,8 @@
             this.dgv_template.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_template.RowHeadersWidth = 51;
             this.dgv_template.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_template.Size = new System.Drawing.Size(844, 394);
+            this.dgv_template.Size = new System.Drawing.Size(1126, 485);
             this.dgv_template.TabIndex = 38;
-            //this.dgv_template.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_template_CellClick);
             // 
             // editar
             // 
@@ -165,7 +169,7 @@
             this.editar.Name = "editar";
             this.editar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.editar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.editar.Width = 59;
+            this.editar.Width = 74;
             // 
             // eliminar
             // 
@@ -175,29 +179,28 @@
             this.eliminar.Name = "eliminar";
             this.eliminar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.eliminar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.eliminar.Width = 68;
+            this.eliminar.Width = 87;
             // 
             // btnNuevo_template
             // 
             this.btnNuevo_template.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNuevo_template.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnNuevo_template.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo_template.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo_template.Font = new System.Drawing.Font("Meiryo UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo_template.ForeColor = System.Drawing.Color.White;
-            this.btnNuevo_template.Location = new System.Drawing.Point(751, 80);
-            this.btnNuevo_template.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNuevo_template.Location = new System.Drawing.Point(1001, 99);
             this.btnNuevo_template.Name = "btnNuevo_template";
-            this.btnNuevo_template.Size = new System.Drawing.Size(114, 30);
+            this.btnNuevo_template.Size = new System.Drawing.Size(152, 37);
             this.btnNuevo_template.TabIndex = 86;
             this.btnNuevo_template.Text = "NUEVO";
             this.btnNuevo_template.UseVisualStyleBackColor = false;
             // 
             // frmTemplate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(887, 559);
+            this.ClientSize = new System.Drawing.Size(1183, 688);
             this.Controls.Add(this.btnNuevo_template);
             this.Controls.Add(this.pnlGrid_template);
             this.Controls.Add(this.lblTitle_template);
@@ -205,7 +208,6 @@
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "frmTemplate";
             this.Text = "frmTemplate";
-            this.Load += new System.EventHandler(this.frmTemplate_Load);
             this.Controls.SetChildIndex(this.gbxSearch_template, 0);
             this.Controls.SetChildIndex(this.lblTitle_template, 0);
             this.Controls.SetChildIndex(this.pnlGrid_template, 0);

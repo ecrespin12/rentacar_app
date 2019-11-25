@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsAutos" targetNamespace="http://tempuri.org/dsAutos.xsd" xmlns:mstns="http://tempuri.org/dsAutos.xsd" xmlns="http://tempuri.org/dsAutos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from tbl_aut_auto 
+               join tbl_col_color on aut_codcol = col_codigo
+               join tbl_mar_marca on aut_codmar = mar_codigo
+               join tbl_tia_tipo_auto on aut_codtia = tia_codigo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="aut_codigo" DataSetColumn="aut_codigo" />
+              <Mapping SourceColumn="aut_codmar" DataSetColumn="aut_codmar" />
+              <Mapping SourceColumn="aut_codcol" DataSetColumn="aut_codcol" />
+              <Mapping SourceColumn="aut_codtia" DataSetColumn="aut_codtia" />
+              <Mapping SourceColumn="aut_modelo" DataSetColumn="aut_modelo" />
+              <Mapping SourceColumn="aut_anio" DataSetColumn="aut_anio" />
+              <Mapping SourceColumn="aut_placa" DataSetColumn="aut_placa" />
+              <Mapping SourceColumn="aut_estado" DataSetColumn="aut_estado" />
+              <Mapping SourceColumn="col_codigo" DataSetColumn="col_codigo" />
+              <Mapping SourceColumn="col_nombre" DataSetColumn="col_nombre" />
+              <Mapping SourceColumn="col_hex" DataSetColumn="col_hex" />
+              <Mapping SourceColumn="mar_codigo" DataSetColumn="mar_codigo" />
+              <Mapping SourceColumn="mar_nombre" DataSetColumn="mar_nombre" />
+              <Mapping SourceColumn="mar_estatus" DataSetColumn="mar_estatus" />
+              <Mapping SourceColumn="tia_codigo" DataSetColumn="tia_codigo" />
+              <Mapping SourceColumn="tia_nombre" DataSetColumn="tia_nombre" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsAutos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsAutos" msprop:Generator_DataSetName="dsAutos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="aut_codigo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnaut_codigo" msprop:Generator_ColumnPropNameInRow="aut_codigo" msprop:Generator_ColumnPropNameInTable="aut_codigoColumn" msprop:Generator_UserColumnName="aut_codigo" type="xs:int" />
+              <xs:element name="aut_codmar" msprop:Generator_ColumnVarNameInTable="columnaut_codmar" msprop:Generator_ColumnPropNameInRow="aut_codmar" msprop:Generator_ColumnPropNameInTable="aut_codmarColumn" msprop:Generator_UserColumnName="aut_codmar" type="xs:int" />
+              <xs:element name="aut_codcol" msprop:Generator_ColumnVarNameInTable="columnaut_codcol" msprop:Generator_ColumnPropNameInRow="aut_codcol" msprop:Generator_ColumnPropNameInTable="aut_codcolColumn" msprop:Generator_UserColumnName="aut_codcol" type="xs:int" />
+              <xs:element name="aut_codtia" msprop:Generator_ColumnVarNameInTable="columnaut_codtia" msprop:Generator_ColumnPropNameInRow="aut_codtia" msprop:Generator_ColumnPropNameInTable="aut_codtiaColumn" msprop:Generator_UserColumnName="aut_codtia" type="xs:int" />
+              <xs:element name="aut_modelo" msprop:Generator_ColumnVarNameInTable="columnaut_modelo" msprop:Generator_ColumnPropNameInRow="aut_modelo" msprop:Generator_ColumnPropNameInTable="aut_modeloColumn" msprop:Generator_UserColumnName="aut_modelo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aut_anio" msprop:Generator_ColumnVarNameInTable="columnaut_anio" msprop:Generator_ColumnPropNameInRow="aut_anio" msprop:Generator_ColumnPropNameInTable="aut_anioColumn" msprop:Generator_UserColumnName="aut_anio" type="xs:dateTime" />
+              <xs:element name="aut_placa" msprop:Generator_ColumnVarNameInTable="columnaut_placa" msprop:Generator_ColumnPropNameInRow="aut_placa" msprop:Generator_ColumnPropNameInTable="aut_placaColumn" msprop:Generator_UserColumnName="aut_placa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="aut_estado" msprop:Generator_ColumnVarNameInTable="columnaut_estado" msprop:Generator_ColumnPropNameInRow="aut_estado" msprop:Generator_ColumnPropNameInTable="aut_estadoColumn" msprop:Generator_UserColumnName="aut_estado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="col_codigo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columncol_codigo" msprop:Generator_ColumnPropNameInRow="col_codigo" msprop:Generator_ColumnPropNameInTable="col_codigoColumn" msprop:Generator_UserColumnName="col_codigo" type="xs:int" />
+              <xs:element name="col_nombre" msprop:Generator_ColumnVarNameInTable="columncol_nombre" msprop:Generator_ColumnPropNameInRow="col_nombre" msprop:Generator_ColumnPropNameInTable="col_nombreColumn" msprop:Generator_UserColumnName="col_nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="col_hex" msprop:Generator_ColumnVarNameInTable="columncol_hex" msprop:Generator_ColumnPropNameInRow="col_hex" msprop:Generator_ColumnPropNameInTable="col_hexColumn" msprop:Generator_UserColumnName="col_hex">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mar_codigo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnmar_codigo" msprop:Generator_ColumnPropNameInRow="mar_codigo" msprop:Generator_ColumnPropNameInTable="mar_codigoColumn" msprop:Generator_UserColumnName="mar_codigo" type="xs:int" />
+              <xs:element name="mar_nombre" msprop:Generator_ColumnVarNameInTable="columnmar_nombre" msprop:Generator_ColumnPropNameInRow="mar_nombre" msprop:Generator_ColumnPropNameInTable="mar_nombreColumn" msprop:Generator_UserColumnName="mar_nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mar_estatus" msprop:Generator_ColumnVarNameInTable="columnmar_estatus" msprop:Generator_ColumnPropNameInRow="mar_estatus" msprop:Generator_ColumnPropNameInTable="mar_estatusColumn" msprop:Generator_UserColumnName="mar_estatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tia_codigo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columntia_codigo" msprop:Generator_ColumnPropNameInRow="tia_codigo" msprop:Generator_ColumnPropNameInTable="tia_codigoColumn" msprop:Generator_UserColumnName="tia_codigo" type="xs:int" />
+              <xs:element name="tia_nombre" msprop:Generator_ColumnVarNameInTable="columntia_nombre" msprop:Generator_ColumnPropNameInRow="tia_nombre" msprop:Generator_ColumnPropNameInTable="tia_nombreColumn" msprop:Generator_UserColumnName="tia_nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:aut_codigo" />
+      <xs:field xpath="mstns:col_codigo" />
+      <xs:field xpath="mstns:mar_codigo" />
+      <xs:field xpath="mstns:tia_codigo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

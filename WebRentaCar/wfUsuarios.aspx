@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="wfUsuarios.aspx.cs" Inherits="wfUsuarios" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <section class="content-header">
         <h1>
@@ -27,29 +26,35 @@
                                 <div id="Div4" class="dataTables_wrapper form-inline dt-bootstrap" runat="server">
                                     <div class="row">
                                         <div class="col-md-12"> <div class="table-responsive">
-                                                <asp:Repeater ID="rptClientes" runat="server">
+                                            <asp:Repeater Id="rr" runat="server"></asp:Repeater>
+                                                <asp:Repeater ID="rptClientes" runat="server" OnItemDataBound="rptClientes_ItemDataBound">
                                                     <HeaderTemplate>
                                                         <table class="table table-striped tblClientes" id="tblClientes">
                                                             <thead>
                                                                 <tr>
+                                                                    <th>Rol</th>
                                                                     <th>#</th>
                                                                     <th>Nombre</th>
                                                                     <th>Apellido</th>
-                                                                    <th>Rol</th>
                                                                     <th>Correo</th>
-                                                                    
+
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                     </HeaderTemplate>
                                                     <ItemTemplate>
                                                         <tr>
-                                                            <td><asp:label ID="lblcodigo" runat="server" Text="-"></asp:Label></td>
-                                                            <td><asp:label ID="lblNombre" runat="server" Text="-"></asp:Label></td>
-                                                            <td><asp:label ID="lblApellido" runat="server" Text="-"></asp:Label></td>
-                                                            <td><asp:label ID="lblRol" runat="server" Text="-"></asp:Label></td>
-                                                            <td><asp:label ID="lblCorreo" runat="server" Text="-"></asp:Label></td>
-                                                           
+                                                            <td>
+                                                                <asp:Label ID="lblRol" runat="server" Text="-"></asp:Label></td>
+                                                            <td>
+                                                                <asp:Label ID="lblcodigo" runat="server" Text="-"></asp:Label></td>
+                                                            <td>
+                                                                <asp:Label ID="lblNombre" runat="server" Text="-"></asp:Label></td>
+                                                            <td>
+                                                                <asp:Label ID="lblApellido" runat="server" Text="-"></asp:Label></td>
+                                                            <td>
+                                                                <asp:Label ID="lblCorreo" runat="server" Text="-"></asp:Label></td>
+
                                                         </tr>
                                                     </ItemTemplate>
                                                     <FooterTemplate>
@@ -99,7 +104,44 @@
     <script>
 
 
+        oTable = $('#tblClientes').dataTable({
+            "fnDrawCallback": function (oSettings) {
+                if (oSettings.aiDisplay.length == 0) {
+                    return;
+                }
 
+                var nTrs = $('#tblClientes tbody tr');
+                var iColspan = nTrs[0].getElementsByTagName('td').length;
+                var sLastGroup = "";
+                for (var i = 0; i < nTrs.length; i++) {
+                    var iDisplayIndex = oSettings._iDisplayStart + i;
+                    var sGroup = oSettings.aoData[oSettings.aiDisplay[iDisplayIndex]]._aData[0];
+                    if (sGroup != sLastGroup) {
+                        var nGroup = document.createElement('tr');
+                        var nCell = document.createElement('td');
+                        nCell.colSpan = iColspan;
+                        nCell.className = "group";
+                        nCell.innerHTML = sGroup;
+                        nGroup.appendChild(nCell);
+                        nTrs[i].parentNode.insertBefore(nGroup, nTrs[i]);
+                        sLastGroup = sGroup;
+                    }
+                }
+            },
+            "aoColumnDefs": [{ "bVisible": false, "aTargets": [0] }],
+            "aaSortingFixed": [[0, 'asc']],
+            "aaSorting": [[1, 'asc']],
+            //"sDom": 'lfr<"giveHeight"t>ip',
+            "sDom": '<"top"fi>',
+            "bPaginate": false,
+            "oLanguage": {
+                "sSearch": "Buscar:",
+                "sZeroRecords": "No se encontraron registros que mostrar",
+                "sInfo": "Total registros mostrados: _TOTAL_",
+                "sInfoFiltered": " - filtrados de _MAX_ registros"
+            }
+        });
     </script>
 </asp:Content>
+
 

@@ -18,5 +18,8 @@ public class clVistaUsuario
 
     public clVistaUsuario()
     {
+        //
+        // TODO: Agregar aquí la lógica del constructor
+        //
     }
 }

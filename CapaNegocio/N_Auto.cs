@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 using System.Data;
 using CapaDatos;
 using CapaEntidad;
+using CapaNegocio.Interfaces;
 
 namespace CapaNegocio
 {
-    public class N_Auto
+    public class N_Auto : IN_Auto
     {
         D_Auto dAuto = new D_Auto();
 

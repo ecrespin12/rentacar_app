@@ -60,20 +60,6 @@ namespace CapaDatos
             con.Close();
         }
 
-        public void D_EliminarTipoAuto(E_Tipo_Auto instancia)
-        {
-            SqlCommand cmd = new SqlCommand("tipo_auto_eliminar_sp", con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@id", instancia.codigo);
-
-            if (con.State == ConnectionState.Open)
-                con.Close();
-
-            con.Open();
-            cmd.ExecuteNonQuery();
-            con.Close();
-        }
-
         public DataSet D_GetTipoAuto(int codigo)
         {
 
